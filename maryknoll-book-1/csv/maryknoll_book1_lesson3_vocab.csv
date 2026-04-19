@@ -1,22 +1,22 @@
-number,poj,taiwanese_hanji,mandarin,english,notes,example_poj,example_hanji,example_english
-1,bōe?,未?,了嗎?,(or) not yet?,"An enclitic used to form a question. For enclitic see Ls 2, Gram. Note 3.",,,
-2,chē,濟,多,much/many,"Frequently combined with ""chin"" to mean ""very much/very many."" This ""chē"" is the same character and meaning as the ""chē"" in ""lōa-chē."" Distinguish from ""chē"" of ""chhiá* chē...""",Góa ū chin-chē chî*.,,I have a lot of money.
-3,Chiah-pá bōe?,食飽未?,吃飽了嗎?,Did (subject) eat (or) not yet?,"If the subject is 2d person, this term is usually a greeting. ""Bōe"" here is enclitic.",Chiah-pá ă.,,"Yes, I have eaten. (Subject omitted. This is an answer to ""Chiah-pá bōe?"")"
-4,chin,真,真/很,true/real/genuine; very; (modifying a verb) truly/really/very,,I chin hó. | I chin ài khòa*-chheh.,,He is very good. | He really likes to read.
-5,ka-pi,咖啡,咖啡,coffee,,Góa bô ài lim ka-pi.,,"I don't like coffee. / I don't want coffee (now). (Lit., I don't like/want to drink coffee.)"
-6,kóng,講,說/講,to speak/say/tell,,kóng-ōe. | I chin ài kóng-ōe.,,to talk. | He loves to talk.
-7,kún-chúi,滾水,開水,drinking water,"Lit., boiled water.",Lim kún-chúi. | Lí ài lim kún-chúi bô·?,,to drink boiled water. | Do you want a drink of water?
-8,kùi,貴,貴,honorable,"""Kùi"" will be used in a later lesson to mean ""expensive"". Using the honorific term ""kùi"" is a polite way of asking the name of an adult. It is not ordinarily spoken to younger people, never to children.",Lí kùi sè*?,,What is your surname?
-9,lâng,人,人,human being/people/person,"The ""lâng"" frequently changes tone, an exception to the rule that one-syllable nouns do not change tone.",,,
-10,bô lâng,無人,沒有人,no one / not one (person) / there is no one who,,In bô lâng ài tha̍k.,,None of them wants to study.
-11,ū lâng,有人,有人,there is someone who... / there are people who...,,Ū lâng ài lim kún-chúi bô·?,,Does anyone want a drink of water?
-12,lim,啉,飲/喝,to drink,,Lí ài lim sím-mih?,,What do you want to drink?
-13,ōe,話,話,word,,Nĝ Siàn-si* bô sím-mih ài kóng-ōe. | Lâu Siàn-si* chin ài kóng-ōe.,,Mr. N̂g is rather quiet (does not like to talk much / doesn't say much). | Mr. Lâu loves to talk.
-14,sè*/sì*,姓,姓,clan name / family name / surname; to be surnamed,,Góa sè* Lîm. Lí kùi sè*?,,My surname is Lîm. What's yours?
-15,siàn-si*/sìn-se*,先生,先生,Mr./Sir; gentleman; husband,"The word for ""wife"" will be in Ls 4.",,,
-16,sit-lé,失禮,失禮/對不起/抱歉,Sorry; Please excuse me; to be impolite,"= I beg your pardon for my want of politeness; a breaching of etiquette.",Sit-lé! Sit-lé!,,"I'm very sorry (e.g., for making a mess of things)."
-17,Siú-lí,修女,修女,Sister,A religious sister; this term is not used to denote blood relationship.,,,
-18,Siú-sū,修士,修士,Brother,A religious brother; this term is not used to denote blood relationship.,,,
-19,tê,茶,茶,drinking water / tea,,Chhiá* lí lim-tê.,,Please have some tea (OR: drinking water).
-20,tê-bí-tê,茶米茶,茶葉茶,tea,"""Tê-bí"" means ""tea leaves"".","Góa ài lim kún-chúi, bô ài lim tê-bí-tê.",,"I want to drink water, not tea."
-21,tha̍k,讀,讀,to read aloud,"E.g., to read Scripture lesson in church; in this case we do not say ""khòa*"". tha̍k-chheh = to study. Used only of a student in reference to school books; by extension it means ""to be a student"". Distinguish from ""khòa*-chheh"" which means ""to read a book"" but not in the sense of studying.","I chin ài kóng-ōe, bô ài tha̍k-chheh.",,He likes to talk; he doesn't like studying.
+number,poj,poj_sandhi,taiwanese_hanji,mandarin,english,notes,example_poj,example_hanji,example_english
+1,bōe?,bōe?,未?,了嗎?,(or) not yet?,"An enclitic used to form a question. For enclitic see Ls 2, Gram. Note 3.",,,
+2,chē,chē,濟,多,much/many,"Frequently combined with ""chin"" to mean ""very much/very many."" This ""chē"" is the same character and meaning as the ""chē"" in ""lōa-chē."" Distinguish from ""chē"" of ""chhiá* chē...""",Góa ū chin-chē chî*.,,I have a lot of money.
+3,Chiah-pá bōe?,Chiah2-pá1 bōe?,食飽未?,吃飽了嗎?,Did (subject) eat (or) not yet?,"If the subject is 2d person, this term is usually a greeting. ""Bōe"" here is enclitic.",Chiah-pá ă.,,"Yes, I have eaten. (Subject omitted. This is an answer to ""Chiah-pá bōe?"")"
+4,chin,chin,真,真/很,true/real/genuine; very; (modifying a verb) truly/really/very,,I chin hó. | I chin ài khòa*-chheh.,,He is very good. | He really likes to read.
+5,ka-pi,ka7-pi,咖啡,咖啡,coffee,,Góa bô ài lim ka-pi.,,"I don't like coffee. / I don't want coffee (now). (Lit., I don't like/want to drink coffee.)"
+6,kóng,kóng,講,說/講,to speak/say/tell,,kóng-ōe. | I chin ài kóng-ōe.,,to talk. | He loves to talk.
+7,kún-chúi,kún1-chúi,滾水,開水,drinking water,"Lit., boiled water.",Lim kún-chúi. | Lí ài lim kún-chúi bô·?,,to drink boiled water. | Do you want a drink of water?
+8,kùi,kùi,貴,貴,honorable,"""Kùi"" will be used in a later lesson to mean ""expensive"". Using the honorific term ""kùi"" is a polite way of asking the name of an adult. It is not ordinarily spoken to younger people, never to children.",Lí kùi sè*?,,What is your surname?
+9,lâng,lâng,人,人,human being/people/person,"The ""lâng"" frequently changes tone, an exception to the rule that one-syllable nouns do not change tone.",,,
+10,bô lâng,bô7 lâng,無人,沒有人,no one / not one (person) / there is no one who,,In bô lâng ài tha̍k.,,None of them wants to study.
+11,ū lâng,ū3 lâng,有人,有人,there is someone who... / there are people who...,,Ū lâng ài lim kún-chúi bô·?,,Does anyone want a drink of water?
+12,lim,lim,啉,飲/喝,to drink,,Lí ài lim sím-mih?,,What do you want to drink?
+13,ōe,ōe,話,話,word,,Nĝ Siàn-si* bô sím-mih ài kóng-ōe. | Lâu Siàn-si* chin ài kóng-ōe.,,Mr. N̂g is rather quiet (does not like to talk much / doesn't say much). | Mr. Lâu loves to talk.
+14,sè*/sì*,sè*/sì*,姓,姓,clan name / family name / surname; to be surnamed,,Góa sè* Lîm. Lí kùi sè*?,,My surname is Lîm. What's yours?
+15,siàn-si*/sìn-se*,siàn2-si*/sìn2-se*,先生,先生,Mr./Sir; gentleman; husband,"The word for ""wife"" will be in Ls 4.",,,
+16,sit-lé,sit8-lé,失禮,失禮/對不起/抱歉,Sorry; Please excuse me; to be impolite,"= I beg your pardon for my want of politeness; a breaching of etiquette.",Sit-lé! Sit-lé!,,"I'm very sorry (e.g., for making a mess of things)."
+17,Siú-lí,Siú1-lí,修女,修女,Sister,A religious sister; this term is not used to denote blood relationship.,,,
+18,Siú-sū,Siú1-sū,修士,修士,Brother,A religious brother; this term is not used to denote blood relationship.,,,
+19,tê,tê,茶,茶,drinking water / tea,,Chhiá* lí lim-tê.,,Please have some tea (OR: drinking water).
+20,tê-bí-tê,tê7-bí1-tê,茶米茶,茶葉茶,tea,"""Tê-bí"" means ""tea leaves"".","Góa ài lim kún-chúi, bô ài lim tê-bí-tê.",,"I want to drink water, not tea."
+21,tha̍k,tha̍k,讀,讀,to read aloud,"E.g., to read Scripture lesson in church; in this case we do not say ""khòa*"". tha̍k-chheh = to study. Used only of a student in reference to school books; by extension it means ""to be a student"". Distinguish from ""khòa*-chheh"" which means ""to read a book"" but not in the sense of studying.","I chin ài kóng-ōe, bô ài tha̍k-chheh.",,He likes to talk; he doesn't like studying.
