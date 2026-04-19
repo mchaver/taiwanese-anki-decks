@@ -1,22 +1,22 @@
-number,poj,poj_sandhi,taiwanese_hanji,mandarin,english,notes,example_poj,example_hanji,example_english
-1,bô,bô,無,沒有,no/none/not have/without,"Negative of ""ū"", Ls. 1.",Góa bô chî*.,,I have no money.
-2,bô·?,bô·3?,無?,嗎?,or not?,"Used at the end of a sentence to make it interrogative. With the 5th tone changed to 3rd — see Grammar Note on Enclitics. ""Bô·"" is often pronounced as ""bō"" — without the dot.",Lí ū chî* bô·?,,Have you any money?
-3,bô ài,bô7 ài,無愛,不喜歡/不要,not like/not want/to dislike,,Góa bô ài khòa*-chheh.,,I don't want (OR: like) to read.
-4,Bo̍k-su,Bo̍k3-su,牧師,牧師,(of Protestant clergy) minister/Reverend,Used also in direct address.,,,
-5,Bo̍k-su-niû,Bo̍k3-su7-niû,牧師娘,牧師娘,wife of a Protestant minister,Used also in direct address.,,,
-6,chē,chē,坐,坐,to sit; (with vehicle) to ride/take,,Chhiá* chē.,,Please have a seat.
-7,chheh,chheh,冊,書,book(s),,Lí ū chheh bô·?,,Have you any books?
-8,chhiá*,chhiá*,請,請,Please (request)/to invite/treat to,,Chhiá* lín chiah-pn̄g.,,Invite them to eat. | Please eat.
-9,chia̍h,chia̍h,食,吃,to eat,"See Vocab. Note, p. 37.",chiah-pn̄g. | In bô ài chiah-pn̄g.,,to eat rice/eat/have a meal. | They don't want to eat. OR: They don't like to eat rice.
-10,góan,góan,阮,我們,we/us,"""Góan"" excludes the person(s) spoken to. Compare with ""lán"", Voc. No. 15.",,,
-11,in,in,𪜶,他(她)們,they/them,,,,
-12,khòa*,khòa*,看,看,"to look at; to watch/see; (with ""chheh"") to read","With the determined purpose of seeing, distinguished from ""happen to see"".",Góa ài khòa*-chheh.,,I like to read.
-13,kóe-chí,kóe1-chí,果子,水果,fruit,,Lí ài chiah kóe-chí bô·?,,Do you like to eat fruit?
-14,Kòh lâi chē. / Chiah kòh lâi chē.,Kòh2 lâi7 chē. / Chiah2 kòh2 lâi7 chē.,閣來坐 / 才閣來坐,再來坐/再光臨,Come again. / Then again come to sit.,"Lit., Again come to sit. Spoken by host to visitor who is leaving the house or by businessman to customer who is leaving the shop. Answer: ""Hó!"" OR: ""Hó! Hó!""",Chhiá* lí kòh lâi chē.,,Please come again.
-15,lán,lán,咱,我們,we/us,Includes the person(s) spoken to.,,,
-16,lín,lín,恁,你們,you (plural),"Subjective and objective cases; in possessive case can be singular.",,,
-17,m̄-sī,m̄3-sī,毋是,不是,not be,"Negates the statement; Negative of ""sī"", Ls. 1.",He m̄-sī chî*.,,That is not money.
-18,pn̄g,pn̄g,飯,飯,(cooked) rice/food,,"Che sī pn̄g, sī bô·?",,Is this rice?
-19,sī bô·?,sī3 bô·?,是無?,是嗎?,Is that right?/Is it so?/Is it or not?,Used at the end of a sentence to make it interrogative.,"Lí sī Bo̍k-su, sī bô·?",,Are you a minister?
-20,sím-mih,sím1-mih2,啥物,什麼,what/any/anything,"The ""mih"" in ""sím-mih"" is always in the 2d tone.",I ài sím-mih? | I bô ài sím-mih. | I bô ài sím-mih chiah.,,What does he want? | He doesn't want anything. | He doesn't feel very much like eating.
-21,sîn-hū,sîn7-hū,神父,神父,priest(s); (in direct address) Father,"Lit., Spiritual Father.",,,
+number,poj,poj_sandhi,taiwanese_hanji,mandarin,english,notes
+1,bô,bô,無,沒有,no/none/not have/without,"Negative of ""ū"", Ls. 1."
+2,bô·?,bô·3?,無?,嗎?,or not?,"Used at the end of a sentence to make it interrogative. With the 5th tone changed to 3rd — see Grammar Note on Enclitics. ""Bô·"" is often pronounced as ""bō"" — without the dot."
+3,bô ài,bô7 ài,無愛,不喜歡/不要,not like/not want/to dislike,
+4,Bo̍k-su,Bo̍k3-su,牧師,牧師,(of Protestant clergy) minister/Reverend,Used also in direct address.
+5,Bo̍k-su-niû,Bo̍k3-su7-niû,牧師娘,牧師娘,wife of a Protestant minister,Used also in direct address.
+6,chē,chē,坐,坐,to sit; (with vehicle) to ride/take,
+7,chheh,chheh,冊,書,book(s),
+8,chhiá*,chhiá*,請,請,Please (request)/to invite/treat to,
+9,chia̍h,chia̍h,食,吃,to eat,"See Vocab. Note, p. 37."
+10,góan,góan,阮,我們,we/us,"""Góan"" excludes the person(s) spoken to. Compare with ""lán"", Voc. No. 15."
+11,in,in,𪜶,他(她)們,they/them,
+12,khòa*,khòa*,看,看,"to look at; to watch/see; (with ""chheh"") to read","With the determined purpose of seeing, distinguished from ""happen to see""."
+13,kóe-chí,kóe1-chí,果子,水果,fruit,
+14,Kòh lâi chē. / Chiah kòh lâi chē.,Kòh2 lâi7 chē. / Chiah2 kòh2 lâi7 chē.,閣來坐 / 才閣來坐,再來坐/再光臨,Come again. / Then again come to sit.,"Lit., Again come to sit. Spoken by host to visitor who is leaving the house or by businessman to customer who is leaving the shop. Answer: ""Hó!"" OR: ""Hó! Hó!"""
+15,lán,lán,咱,我們,we/us,Includes the person(s) spoken to.
+16,lín,lín,恁,你們,you (plural),"Subjective and objective cases; in possessive case can be singular."
+17,m̄-sī,m̄3-sī,毋是,不是,not be,"Negates the statement; Negative of ""sī"", Ls. 1."
+18,pn̄g,pn̄g,飯,飯,(cooked) rice/food,
+19,sī bô·?,sī3 bô·?,是無?,是嗎?,Is that right?/Is it so?/Is it or not?,Used at the end of a sentence to make it interrogative.
+20,sím-mih,sím1-mih2,啥物,什麼,what/any/anything,"The ""mih"" in ""sím-mih"" is always in the 2d tone."
+21,sîn-hū,sîn7-hū,神父,神父,priest(s); (in direct address) Father,"Lit., Spiritual Father."
