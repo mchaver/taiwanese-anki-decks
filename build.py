@@ -21,8 +21,9 @@ from pathlib import Path
 import genanki
 
 ROOT = Path(__file__).parent
-CSV_DIR = ROOT / "csv"
-OUT_FILE = ROOT / "maryknoll_book1.apkg"
+BOOK_DIR = ROOT / "maryknoll-book-1"
+CSV_DIR = BOOK_DIR / "csv"
+OUT_DIR = BOOK_DIR / "decks"
 
 LESSONS = [1, 2, 3]
 
@@ -165,43 +166,41 @@ def build_deck(deck_id: int, name: str, model, rows, schema, guid_prefix: str, k
 
 
 def main() -> None:
-    decks: list[genanki.Deck] = []
+    OUT_DIR.mkdir(exist_ok=True)
+
+    variants = [
+        # (kind, model, schema, filename_suffix, deck_name_suffix, guid_prefix, key)
+        ("vocab",   vocab_hanji_model,   VOCAB_FIELDS,   "vocab_hanji_front",    "Vocab (Hanji front)",    "v-h", "number"),
+        ("vocab",   vocab_poj_model,     VOCAB_FIELDS,   "vocab_poj_front",      "Vocab (POJ front)",      "v-p", "number"),
+        ("example", example_hanji_model, EXAMPLE_FIELDS, "examples_hanji_front", "Examples (Hanji front)", "e-h", "vocab_number"),
+        ("example", example_poj_model,   EXAMPLE_FIELDS, "examples_poj_front",   "Examples (POJ front)",   "e-p", "vocab_number"),
+    ]
+
+    total_notes = 0
+    total_files = 0
 
     for lesson in LESSONS:
         vocab_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_vocab.csv")
         ex_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_examples.csv")
+        rows_by_kind = {"vocab": vocab_rows, "example": ex_rows}
 
         base = f"Maryknoll Book 1::Lesson {lesson}"
 
-        decks.append(build_deck(
-            DECK_ID_BASE + lesson * 10 + 0,
-            f"{base}::Vocab (Hanji front)",
-            vocab_hanji_model, vocab_rows, VOCAB_FIELDS,
-            f"mk-l{lesson}-v-h", "number",
-        ))
-        decks.append(build_deck(
-            DECK_ID_BASE + lesson * 10 + 1,
-            f"{base}::Vocab (POJ front)",
-            vocab_poj_model, vocab_rows, VOCAB_FIELDS,
-            f"mk-l{lesson}-v-p", "number",
-        ))
-        decks.append(build_deck(
-            DECK_ID_BASE + lesson * 10 + 2,
-            f"{base}::Examples (Hanji front)",
-            example_hanji_model, ex_rows, EXAMPLE_FIELDS,
-            f"mk-l{lesson}-e-h", "vocab_number",
-        ))
-        decks.append(build_deck(
-            DECK_ID_BASE + lesson * 10 + 3,
-            f"{base}::Examples (POJ front)",
-            example_poj_model, ex_rows, EXAMPLE_FIELDS,
-            f"mk-l{lesson}-e-p", "vocab_number",
-        ))
+        for idx, (kind, model, schema, file_suffix, deck_suffix, prefix, key) in enumerate(variants):
+            deck = build_deck(
+                DECK_ID_BASE + lesson * 10 + idx,
+                f"{base}::{deck_suffix}",
+                model, rows_by_kind[kind], schema,
+                f"mk-l{lesson}-{prefix}", key,
+            )
+            out_path = OUT_DIR / f"maryknoll_book1_lesson{lesson}_{file_suffix}.apkg"
+            genanki.Package([deck]).write_to_file(out_path)
+            print(f"  {out_path.name} ({len(deck.notes)} notes)")
+            total_notes += len(deck.notes)
+            total_files += 1
 
-    genanki.Package(decks).write_to_file(OUT_FILE)
-    total_notes = sum(len(d.notes) for d in decks)
-    print(f"Wrote {OUT_FILE}")
-    print(f"  {len(decks)} decks, {total_notes} notes total")
+    print(f"\nWrote {total_files} .apkg files to {OUT_DIR}/")
+    print(f"  {total_notes} notes total")
 
 
 if __name__ == "__main__":
