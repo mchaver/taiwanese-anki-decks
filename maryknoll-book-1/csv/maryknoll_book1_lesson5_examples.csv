@@ -1,6 +1,6 @@
 vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 1,Góa boeh bé mi̍h-kiāⁿ.,Góa1 boeh2 bé1 mi̍h3-kiāⁿ.,我欲買物件.,"I am going shopping."
-2,Saⁿ góa khì Chiong-hòa bé-bô.,Saⁿ7 góa1 khì2 Chiong7-hòa2 bé1-bô.,衫我去彰化買無.,I went to Changhua to buy some clothes but wasn't able to buy any.
+2,Saⁿ góa khì Chiong-hòa bé-bô.,Saⁿ góa1 khì2 Chiong7-hòa bé1-bô.,衫我去彰化買無.,I went to Changhua to buy some clothes but wasn't able to buy any.
 3,"Góa bé-bô, i bé-ū.","Góa1 bé1-bô, i7 bé1-ū.","我買無, 伊買有.",I didn't buy what I wanted; he did.
 4,"Lín thài-thài ū teh bē kóe-chí, sī bô·?","Lín1 thài2-thài2 ū3 teh2 bē3 kóe1-chí, sī bô·3?","恁太太有咧賣果子, 是無?","Your wife is selling fruit, isn't she?"
 5,chhēng-saⁿ,chhēng3-saⁿ,穿衫,wear clothes.
@@ -16,11 +16,11 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 10,"Ū, i tī hia.","Ū, i7 tī3 hia.","有, 伊佇遐.","Yes, he's there."
 10,"Bô, i bô tī hia.","Bô, i7 bô7 tī3 hia.","無, 伊無佇遐.","No, he's not there."
 11,"Lí ê chheh hō· góa khòaⁿ, hó bô·?","Lí1 ê7 chheh2 hō·3 góa1 khòaⁿ, hó1 bô·3?","你的冊予我看, 好無?",How about letting me read your book?
-11,"Lí bô ài lim ka-pi; chia̍h kóe-chí, hó bô·?","Lí1 bô7 ài2 lim7 ka7-pi; chia̍h3 kóe1-chí, hó1 bô·3?","你無愛啉咖啡; 食果子, 好無?","You don't want coffee; have some fruit, OK?"
-12,Che kiò-chò sím-mih?,Che7 kiò2-chò2 sím1-mih?,這叫做啥物?,What is this called?
-12,Che kiò-chò thang-á-mn̂g.,Che7 kiò2-chò2 thang7-á1-mn̂g.,這叫做窗仔門.,This is called a window.
+11,"Lí bô ài lim ka-pi; chia̍h kóe-chí, hó bô·?","Lí1 bô7 ài2 lim7 ka7-pi; chia̍h3 kóe1-chí, hó bô·3?","你無愛啉咖啡; 食果子, 好無?","You don't want coffee; have some fruit, OK?"
+12,Che kiò-chò sím-mih?,Che kiò2-chò2 sím1-mih?,這叫做啥物?,What is this called?
+12,Che kiò-chò thang-á-mn̂g.,Che kiò2-chò2 thang7-á1-mn̂g.,這叫做窗仔門.,This is called a window.
 12,Lí sím-mih miâ?,Lí1 sím1-mih2 miâ?,你啥物名?,What is your name?
-12,Góa hō·-chò A-Sêng.,Góa1 hō·3-chò2 A7-Sêng.,我號做阿成.,My name is Ā-Sêng.
+12,Góa hō·-chò A-Sêng.,Góa1 hō·3-chò2 A7-Sêng.,我號做阿成.,My name is A-Sêng.
 13,Goán chhù ū chi̍t ê mn̂g kah saⁿ ê thang-á-mn̂g.,Goán1 chhù ū3 chi̍t3 ê7 mn̂g kah2 saⁿ7 ê7 thang7-á1-mn̂g.,阮厝有一个門佮三个窗仔門.,Our house has one door and 3 windows.
 13,I kah góa lâi.,I7 kah2 góa1 lâi.,伊佮我來.,He came with me.
 13,In chhiáⁿ góa chia̍h-pn̄g kah lim ka-pi.,In7 chhiáⁿ1 góa1 chia̍h3-pn̄g kah2 lim7 ka7-pi.,𪜶請我食飯佮啉咖啡.,They treated me to a meal and coffee.
@@ -28,7 +28,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 15,Chhiáⁿ lí khui thang-á-mn̂g.,Chhiáⁿ1 lí1 khui7 thang7-á1-mn̂g.,請你開窗仔門.,Please open the windows.
 16,chi̍t-kóa chîⁿ,chi̍t3-kóa1 chîⁿ,一寡錢,a bit of money.
 16,Góa boeh khì bé chi̍t-kóa mi̍h-kiāⁿ.,Góa1 boeh2 khì2 bé1 chi̍t3-kóa1 mi̍h3-kiāⁿ.,我欲去買一寡物件.,I'm going to buy a few things.
-16,"Tī chia ū chi̍t-kóa saⁿ; sī sím-mih-lâng ê?","Tī3 chia7 ū3 chi̍t3-kóa1 saⁿ; sī3 sím1-mih2-lâng ê?","佇遮有一寡衫; 是啥物人的?",There are some clothes here; whose are they?
+16,"Tī chia ū chi̍t-kóa saⁿ; sī sím-mih-lâng ê?","Tī3 chia ū3 chi̍t3-kóa1 saⁿ; sī3 sím1-mih2-lâng ê?","佇遮有一寡衫; 是啥物人的?",There are some clothes here; whose are they?
 17,Mn̂g ū koaiⁿ bô·?,Mn̂g7 ū3 koaiⁿ bô·3?,門有關無?,Is the door closed?
 18,Kúi ê lâng?,Kúi1 ê7 lâng?,幾个人?,How many people?
 18,Bô kúi ê.,Bô7 kúi1 ê.,無幾个.,Not many.
@@ -49,11 +49,11 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 27,Sím-mih-lâng sī lí ê hó pêng-iú?,Sím1-mih2-lâng sī3 lí1 ê7 hó1 pêng7-iú?,啥物人是你的好朋友?,Who is your good friend?
 28,Chhiáⁿ lí chi̍t pún chheh hō· góa khòaⁿ.,Chhiáⁿ1 lí1 chi̍t3 pún1 chheh hō·3 góa1 khòaⁿ.,請你一本冊予我看.,Please give me a book to read.
 29,Góa ê saⁿ tī toh-ūi?,Góa1 ê7 saⁿ tī3 toh2-ūi?,我的衫佇佗位?,Where is my shirt/dress?
-30,Lí ê saⁿ-khò· boeh sé bô·?,Lí1 ê7 saⁿ7-khò·2 boeh2 sé1 bô·3?,你的衫褲欲洗無?,Do you want your clothes washed?
+30,Lí ê saⁿ-khò· boeh sé bô·?,Lí1 ê7 saⁿ7-khò· boeh2 sé1 bô·3?,你的衫褲欲洗無?,Do you want your clothes washed?
 31,sé saⁿ,sé1 saⁿ,洗衫,wash clothes.
 31,Góa ê saⁿ iáu-bōe sé.,Góa1 ê7 saⁿ iáu1-bōe3 sé.,我的衫猶未洗.,I haven't done my laundry yet.
 32,Góa ê chheh ū siá góa ê sèⁿ-miâ.,Góa1 ê7 chheh ū3 siá1 góa1 ê7 sèⁿ2-miâ.,我的冊有寫我的姓名.,I wrote my name in my books.
-34,Thang-á-mn̂g lí ài khui bô·?,Thang7-á1-mn̂g7 lí1 ài2 khui bô·3?,窗仔門你愛開無?,Do you want the window opened?
+34,Thang-á-mn̂g lí ài khui bô·?,Thang7-á1-mn̂g lí1 ài2 khui bô·3?,窗仔門你愛開無?,Do you want the window opened?
 35,Lí ê chheh tī góa chia.,Lí1 ê7 chheh tī3 góa1 chia.,你的冊佇我遮.,I have your book. (It is at my place.)
 35,Tī chheh-nih ū siá góa ê miâ.,Tī3 chheh-nih3 ū3 siá1 góa1 ê7 miâ.,佇冊裡有寫我的名.,My name is in the book.
 36,Lí boeh khì toh-ūi?,Lí1 boeh2 khì2 toh2-ūi?,你欲去佗位?,Where are you going?
