@@ -73,6 +73,9 @@ Examples: `Gâu7-chá`, `lōa3-chē`, `Che ài2 lōa3-chē`.
 4. **Sentence-final enclitics** (`bô·?`, `lè?`, `bōe?`, `a`) do not cause the preceding word to sandhi. The enclitic itself often takes its own special sandhi tone (e.g., `bô·3?`, `bōe3?`), documented per-enclitic.
 5. **Proper nouns / surnames** (e.g., `Tân`, `N̂g`) often don't sandhi.
 6. **Comma and semicolon** break the tone group: the syllable before the punctuation stays at its base tone.
+7. **Diminutive suffix `-á`** stays at its base tone and does not sandhi, even in non-final positions (e.g., `í1-á-kha`, `toh2-á-téng`, `chím1-á teh2 tha̍k3-chheh`).
+8. **Tone 7 or 8 noun + `-á` suffix**: the noun itself also stays at its base tone (the whole word is "frozen"). Example: `chhiū-á` (tree) stays as `chhiū-á`, never `chhiū3-á`.
+9. **`Sian-siⁿ`** (先生) is irregular: it sandhis to `Sian3-siⁿ3` (both syllables become tone 3), and a **surname immediately preceding it does not change tone**. Example: `Tân Sian3-siⁿ3`, `Khó· Sian3-siⁿ3`.
 
 When in doubt, defer to explicit tone numbers above syllables on the book page.
 
