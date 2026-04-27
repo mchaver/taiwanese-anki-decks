@@ -16,7 +16,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 6,"Góa chai i ê sèⁿ, m̄-kú m̄-chai-iáⁿ i ê sím-mih miâ.","Góa1 chai7 i7 ê7 sèⁿ, m̄3-kú1 m̄3-chai7-iáⁿ i7 ê7 sím1-mih2 miâ.","我知伊的姓, 毋過毋知影伊的啥物名.",I know his surname but not his given name.
 6,M̄-chai ū lâng boeh khì bô·?,M̄3-chai7 ū3 lâng boeh2 khì bô·3?,毋知有人欲去無?,I wonder if anybody is going.
 7,"Chit tâi thi̍h-bé ài chi̍t-chheng-jī kho·, ē kùi bē?","Chit tâi7 thi̍h3-bé ài2 chi̍t3-chheng7-jī kho·, ē3 kùi bē?","這台鐵馬愛一千二箍, 會貴袂?","This bicycle costs $1,200; is that expensive?"
-7,Bē kùi; chīn siok.,Bē3 kùi; chīn3 siok.,袂貴; 真俗.,That's not expensive; it's very cheap.
+7,Bē kùi; chīn sio̍k.,Bē3 kùi; chīn3 sio̍k.,袂貴; 真俗.,That's not expensive; it's very cheap.
 7,Lí ài kúi chheng?,Lí1 ài2 kúi1 chheng?,你愛幾千?,How many thousand do you want/need?
 8,"Chiah-ê chheh hō· lí, lí ài bô·?","Chiah2-ê7 chheh hō·3 lí, lí1 ài bô·3?","這些冊予你, 你愛無?",I'll give these books to you; do you want them?
 8,Góa ài chit pún niâ-niâ.,Góa1 ài2 chit pún niâ7-niâ.,我愛這本爾爾.,I only want this one.
@@ -43,8 +43,8 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 18,Iōng hún-pit siá.,Iōng3 hún1-pit siá.,用粉筆寫.,Write with chalk.
 19,Che sī góa ê ì-sù.,Che sī3 góa1 ê7 ì2-sù.,這是我的意思.,This is what I mean.
 19,Chit kù ê ì-sù sī sím-mih?,Chit kù2 ê7 ì2-sù sī3 sím1-mih?,這句的意思是啥物?,What's the meaning of this sentence?
-20,Hit pún chheh ū kúi iah?,Hit pún1 chheh ū3 kúi1 iah?,彼本冊有幾頁?,How many pages are there in that book?
-20,Hit pún ū nn̄g-pah-gōa iah.,Hit pún ū3 nn̄g3-pah2-gōa3 iah.,彼本有兩百外頁.,It has over 200 pages.
+20,Hit pún chheh ū kúi ia̍h?,Hit pún1 chheh ū3 kúi1 ia̍h?,彼本冊有幾頁?,How many pages are there in that book?
+20,Hit pún ū nn̄g-pah-gōa ia̍h.,Hit pún ū3 nn̄g3-pah2-gōa3 ia̍h.,彼本有兩百外頁.,It has over 200 pages.
 21,"Góa mn̄g lí, lí ìn góa.","Góa1 mn̄g3 lí, lí1 ìn2 góa.","我問你, 你應我.",I'll ask and you answer.
 21,Lí án-chóaⁿ bô ìn?,Lí1 án1-chóaⁿ bô7 ìn?,你按怎無應?,Why didn't you answer?
 22,Góa iōng-kiâⁿ-ê lâi.,Góa1 iōng3-kiâⁿ7-ê7 lâi.,我用行的來.,I came here by walking (not any other way).
@@ -78,14 +78,14 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 36,Chit jī chhiáⁿ lí siá gō· pái.,Chit jī chhiáⁿ1 lí1 siá1 gō·3 pái.,這字請你寫五擺.,Please write this character 5 times.
 37,Chit jī sī kúi siaⁿ?,Chit jī sī3 kúi1 siaⁿ?,這字是幾聲?,What's the tone on this word?
 37,I sī sím-mih siaⁿ?,I7 sī3 sím1-mih2 siaⁿ?,伊是啥物聲?,What's its tone/sound?
-38,Lí hit tâi thi̍h-bé ē siok bô·?,Lí1 hit tâi7 thi̍h3-bé ē3 siok bô·3?,你彼台鐵馬會俗無?,Was your bicycle cheap?
-38,Bô siok; chīn kùi.,Bô7 siok; chīn3 kùi.,無俗; 真貴.,Not cheap; it was very expensive.
+38,Lí hit tâi thi̍h-bé ē sio̍k bô·?,Lí1 hit tâi7 thi̍h3-bé ē3 sio̍k bô·3?,你彼台鐵馬會俗無?,Was your bicycle cheap?
+38,Bô sio̍k; chīn kùi.,Bô7 sio̍k; chīn3 kùi.,無俗; 真貴.,Not cheap; it was very expensive.
 39,Kúi tiám siōng-khò?,Kúi1 tiám1 siōng3-khò?,幾點上課?,What time is class?
 39,I chím-á teh siōng-khò.,I7 chím1-á teh2 siōng3-khò.,伊這馬咧上課.,He's in class now.
 40,Tē-kúi khò?,Tē3-kúi1 khò?,第幾課?,Which lesson?
 40,Tē-it khò.,Tē3-it2 khò.,第一課.,Lesson one.
-40,Tē-kúi iah?,Tē3-kúi1 iah?,第幾頁?,Which page?
-40,Tē saⁿ-pah gō·-cha̍p-chhit iah.,Tē3 saⁿ7-pah2 gō·3-cha̍p3-chhit iah.,第三百五十七頁.,Page 357.
+40,Tē-kúi ia̍h?,Tē3-kúi1 ia̍h?,第幾頁?,Which page?
+40,Tē saⁿ-pah gō·-cha̍p-chhit ia̍h.,Tē3 saⁿ7-pah2 gō·3-cha̍p3-chhit ia̍h.,第三百五十七頁.,Page 357.
 41,Chím-á kúi tiám?,Chím1-á kúi1 tiám?,這馬幾點?,What time is it?
 41,saⁿ-tiám-pòaⁿ,saⁿ7-tiám1-pòaⁿ,三點半,3:30.
 41,tiám-gōa,tiám1-gōa,點外,It's after one o'clock (and before two).
