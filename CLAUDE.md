@@ -70,7 +70,7 @@ Examples: `Gâu7-chá`, `lōa3-chē`, `Che ài2 lōa3-chē`.
 1. **Single-character nouns** usually do **not** change tone (e.g., `chhù`, `chheh`, `mn̂g` stay at base tone even in non-final position).
 2. **The last character of a noun / noun phrase** usually does not change tone.
 3. **Demonstrative pronouns** (`che`, `he`, `chia`, `hia`) do not change tone. (Note: `chit`/`hit` are demonstrative *modifiers* — they sandhi normally as tone 4 → 2.)
-4. **Sentence-final enclitics** (`bô·?`, `lè?`, `bōe?`, `a`) do not cause the preceding word to sandhi. The enclitic itself often takes its own special sandhi tone (e.g., `bô·3?`, `bōe3?`), documented per-enclitic.
+4. **Sentence-final enclitics** (`bô·?`, `lè?`, `bōe?`, `a`) do not cause the preceding word to sandhi. The enclitic itself often takes its own special sandhi tone (e.g., `bô·3?`, `bōe3?`), documented per-enclitic. In particular: enclitic `lâi` after `tńg`/`khit`/`loh`/`peh-...` at end of clause sandhis to tone 3 (written `lâi3`), while the verb stays at base; enclitic `khì` in the same position stays at base tone (its base is already 3).
 5. **Proper nouns / surnames** (e.g., `Tân`, `N̂g`) often don't sandhi.
 6. **Comma and semicolon** break the tone group: the syllable before the punctuation stays at its base tone.
 7. **Diminutive suffix `-á`** stays at its base tone and does not sandhi, even in non-final positions (e.g., `í1-á-kha`, `toh2-á-téng`, `chím1-á teh2 tha̍k3-chheh`).
