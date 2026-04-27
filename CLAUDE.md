@@ -69,13 +69,15 @@ Examples: `Gâu7-chá`, `lōa3-chē`, `Che ài2 lōa3-chē`.
 
 1. **Single-character nouns** usually do **not** change tone (e.g., `chhù`, `chheh`, `mn̂g` stay at base tone even in non-final position).
 2. **The last character of a noun / noun phrase** usually does not change tone.
-3. **Demonstrative pronouns** (`che`, `he`, `chia`, `hia`) do not change tone.
+3. **Demonstrative pronouns** (`che`, `he`, `chia`, `hia`) do not change tone. (Note: `chit`/`hit` are demonstrative *modifiers* — they sandhi normally as tone 4 → 2.)
 4. **Sentence-final enclitics** (`bô·?`, `lè?`, `bōe?`, `a`) do not cause the preceding word to sandhi. The enclitic itself often takes its own special sandhi tone (e.g., `bô·3?`, `bōe3?`), documented per-enclitic.
 5. **Proper nouns / surnames** (e.g., `Tân`, `N̂g`) often don't sandhi.
 6. **Comma and semicolon** break the tone group: the syllable before the punctuation stays at its base tone.
 7. **Diminutive suffix `-á`** stays at its base tone and does not sandhi, even in non-final positions (e.g., `í1-á-kha`, `toh2-á-téng`, `chím1-á teh2 tha̍k3-chheh`).
 8. **Tone 7 or 8 noun + `-á` suffix**: the noun itself also stays at its base tone (the whole word is "frozen"). Example: `chhiū-á` (tree) stays as `chhiū-á`, never `chhiū3-á`.
 9. **`Sian-siⁿ`** (先生) is irregular: it sandhis to `Sian3-siⁿ3` (both syllables become tone 3), and a **surname immediately preceding it does not change tone**. Example: `Tân Sian3-siⁿ3`, `Khó· Sian3-siⁿ3`.
+10. **`ē-hiáu` questions pair with `bē`** (not `bô·`). The form is `... ē-hiáu ... bē?` (會...袂?), not `... ē-hiáu ... bô·?`. `bē` here is not a sentence-final enclitic — it stays at its base tone.
+11. **`iōng + Verb + ê` construction** ("by means of"): the verb does **not** sandhi. The trailing `ê` follows the 1-3-7 rule: at sentence end `ê` → tone 3 (`ê3`); mid-sentence `ê` → tone 7 (`ê7`). Example: `iōng3-kiâⁿ-ê7 lâi`, `iōng3-siá-ê3`.
 
 When in doubt, defer to explicit tone numbers above syllables on the book page.
 
