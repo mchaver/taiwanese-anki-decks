@@ -46,6 +46,8 @@ Standard RFC 4180. Any field containing `,`, `"`, or newlines **must** be quoted
   - `chia̍h` (not `chiah`) — "to eat"
   - `mi̍h-kiāⁿ` (not `mîⁿ-kiāⁿ`) — "thing"
   - `toh-ūi` / `tah-ūi` (not `tó·-ūi`) — "where"
+  - `lo̍h` (tone 8, not `loh` tone 4) — "down" (e.g., `lo̍h-chhia`, `lo̍h-lâi`)
+  - `niā-niā` (tone 7, not `niâ-niâ` tone 5) — "only"
 
 ## Tone sandhi
 
@@ -75,8 +77,10 @@ Examples: `Gâu7-chá`, `lōa3-chē`, `Che ài2 lōa3-chē`.
 6. **Comma and semicolon** break the tone group: the syllable before the punctuation stays at its base tone.
 7. **Diminutive suffix `-á`** stays at its base tone and does not sandhi, even in non-final positions (e.g., `í1-á-kha`, `toh2-á-téng`, `chím1-á teh2 tha̍k3-chheh`).
 8. **Tone 7 or 8 noun + `-á` suffix**: the noun itself also stays at its base tone (the whole word is "frozen"). Example: `chhiū-á` (tree) stays as `chhiū-á`, never `chhiū3-á`.
-9. **`Sian-siⁿ`** (先生) is irregular: it sandhis to `Sian3-siⁿ3` (both syllables become tone 3), and a **surname immediately preceding it does not change tone**. Example: `Tân Sian3-siⁿ3`, `Khó· Sian3-siⁿ3`.
-10. **`ē-hiáu` questions pair with `bē`** (not `bô·`). The form is `... ē-hiáu ... bē?` (會...袂?), not `... ē-hiáu ... bô·?`. `bē` here is not a sentence-final enclitic — it stays at its base tone.
+9. **`Sian-siⁿ`** (先生) is irregular and depends on context:
+   - **Alone as a noun** (no surname directly before, e.g., `Lín sian-siⁿ`, `sím-mih sian-siⁿ`): tones are **7-1** → `sian7-siⁿ`.
+   - **Preceded by a surname** (e.g., `Tân Sian-siⁿ`, `Khó· Sian-siⁿ`, `Tē Sian-siⁿ`): the **surname does not change tone** and Sian-siⁿ becomes **3-3** → `Tân Sian3-siⁿ3`, `Khó· Sian3-siⁿ3`, `Tē Sian3-siⁿ3`.
+10. **`ē-hiáu` questions pair with `bē`** (not `bô·`). The form is `... ē-hiáu ... bē?` (會...袂?), not `... ē-hiáu ... bô·?`. `bē` at the end of such a question takes sandhi tone 3 (`bē3`), and (like `bô·3`) it does not trigger sandhi on the preceding word. Example: `Lí ē-hiáu khòaⁿ sî-cheng bē?` → `Lí1 ē3-hiáu1 khòaⁿ2 sî7-cheng bē3?`
 11. **`iōng + Verb + ê` construction** ("by means of"): the verb does **not** sandhi. The trailing `ê` follows the 1-3-7 rule: at sentence end `ê` → tone 3 (`ê3`); mid-sentence `ê` → tone 7 (`ê7`). Example: `iōng3-kiâⁿ-ê7 lâi`, `iōng3-siá-ê3`.
 12. **Verb + pronoun at sentence end**: when a sentence ends with a verb (or verb compound) immediately followed by a pronoun, the **last syllable of the verb does not change tone**, and the **pronoun shifts per the 1-3-7 rule** (in practice landing on tone 3 — e.g., `i` tone 1 → `i3`, `góa` tone 2 → `góa3`). Example: `Góa m̄-bat i.` → `Góa1 m̄3-bat i3.`
 
