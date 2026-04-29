@@ -33,7 +33,7 @@ BOOK_DIR = ROOT / "maryknoll-book-1"
 CSV_DIR = BOOK_DIR / "csv"
 OUT_DIR = BOOK_DIR / "decks"
 
-LESSONS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+LESSONS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
 
 MODEL_ID_VOCAB_HANJI = 1607390001
 MODEL_ID_VOCAB_POJ = 1607390002
