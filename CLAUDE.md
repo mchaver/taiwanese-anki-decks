@@ -48,6 +48,8 @@ Standard RFC 4180. Any field containing `,`, `"`, or newlines **must** be quoted
   - `toh-ūi` / `tah-ūi` (not `tó·-ūi`) — "where"
   - `lo̍h` (tone 8, not `loh` tone 4) — "down" (e.g., `lo̍h-chhia`, `lo̍h-lâi`)
   - `niā-niā` (tone 7, not `niâ-niâ` tone 5) — "only"
+  - `chin` (tone 1, no diacritic — not `chīn` tone 7) — "very"; sandhi `chin7-` (tone 1 → 7), not `chīn3-`
+  - Sentence-final perfect-tense particle `a` is written **without diacritic** (tone 1 base), distinct from the diminutive suffix `-á` (always hyphenated). See rule 13.
 
 ## Tone sandhi
 
@@ -83,6 +85,7 @@ Examples: `Gâu7-chá`, `lōa3-chē`, `Che ài2 lōa3-chē`.
 10. **`ē-hiáu` questions pair with `bē`** (not `bô·`). The form is `... ē-hiáu ... bē?` (會...袂?), not `... ē-hiáu ... bô·?`. `bē` at the end of such a question takes sandhi tone 3 (`bē3`), and (like `bô·3`) it does not trigger sandhi on the preceding word. Example: `Lí ē-hiáu khòaⁿ sî-cheng bē?` → `Lí1 ē3-hiáu1 khòaⁿ2 sî7-cheng bē3?`
 11. **`iōng + Verb + ê` construction** ("by means of"): the verb does **not** sandhi. The trailing `ê` follows the 1-3-7 rule: at sentence end `ê` → tone 3 (`ê3`); mid-sentence `ê` → tone 7 (`ê7`). Example: `iōng3-kiâⁿ-ê7 lâi`, `iōng3-siá-ê3`.
 12. **Verb + pronoun at sentence end**: when a sentence ends with a verb (or verb compound) immediately followed by a pronoun, the **last syllable of the verb does not change tone**, and the **pronoun shifts per the 1-3-7 rule** (in practice landing on tone 3 — e.g., `i` tone 1 → `i3`, `góa` tone 2 → `góa3`). Example: `Góa m̄-bat i.` → `Góa1 m̄3-bat i3.`
+13. **Sentence-final perfect-tense particle `a`** (矣) is base tone 1 and is written without a diacritic to distinguish it from the diminutive suffix `-á` (which is hyphenated). At end of clause/sentence it follows the 1-3-7 rule and lands on tone 3 (`a3`). The preceding word is unaffected (it is the last content word of the clause, so it stays at its base tone). Examples: `Hō· lo̍h a.` → `Hō· lo̍h a3.`; `Góa chia̍h pá a.` → `Góa1 chia̍h3 pá a3.`; `chím-á bô a.` → `chím1-á bô a3.`
 
 When in doubt, defer to explicit tone numbers above syllables on the book page.
 

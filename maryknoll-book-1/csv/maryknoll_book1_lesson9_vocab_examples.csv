@@ -2,7 +2,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 1,Lí boeh kah goán khì bô·?,Lí1 boeh2 kah2 goán1 khì bô·3?,你欲佮阮去無?,Are you going with us?
 1,Hó-a.,Hó2-a3.,好啊.,Suits me fine.
 2,Lí ē ài-khùn bē?,Lí1 ē3 ài2-khùn bē3?,你會愛睏袂?,Are you sleepy?
-2,"Ē, góa chīn ài-khùn.","Ē, góa1 chīn3 ài2-khùn.","會, 我真愛睏.","Yes, I am sleepy."
+2,"Ē, góa chin ài-khùn.","Ē, góa1 chin7 ài2-khùn.","會, 我真愛睏.","Yes, I am sleepy."
 2,"Lí bē ài-khùn, sī bô·?","Lí1 bē3 ài2-khùn, sī bô·3?","你袂愛睏, 是無?","You're not sleepy, are you?"
 2,"Sī, góa bē khùn-tiong-tàu.","Sī, góa1 bē3 khùn2-tiong7-tàu.","是, 我袂睏中晝.","Right, I won't take a nap at noon."
 3,Àm-sî góa bô ài lim ka-pi.,Àm2-sî góa1 bô7 ài2 lim7 ka7-pi.,暗時我無愛啉咖啡.,I don't like to drink coffee at night.
@@ -42,9 +42,9 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 17,Chit hāng tāi-chì lí ē-hiáu chò bē?,Chit2 hāng3 tāi3-chì lí1 ē3-hiáu1 chò bē3?,這項代誌你會曉做袂?,Do you know how to do this?
 17,"Góa bē-hiáu chò; góa khòaⁿ, chit hāng tāi-chì chin pháiⁿ-chò.","Góa1 bē3-hiáu1 chò; góa1 khòaⁿ, chit2 hāng3 tāi3-chì chin7 pháiⁿ1-chò.","我袂曉做; 我看, 這項代誌真歹做.",I don't know how to do it; I think this is a very difficult thing to do.
 17,Góa cha-hng kah i khì bé chin-chē hāng mi̍h-kiāⁿ.,Góa1 cha7-hng kah2 i7 khì2 bé1 chin7-chē3 hāng3 mi̍h3-kiāⁿ.,我昨昏佮伊去買真濟項物件.,Yesterday I went with him to buy a lot of things.
-18,"Cha-hng hioh-khùn, lí khì toh-ūi?","Cha7-hng hioh2-khùn, lí1 khì2 toh2-ūi?","昨昏歇睏, 你去佗位?","Yesterday we had a break; where did you go?"
+18,"Cha-hng hioh-khùn, lí khì toh-ūi?","Cha7-hng hioh2-khùn, lí1 khì2 toh2-ūi?","昨昏歇睏, 你去佗位?",Yesterday we had a break; where did you go?
 18,"Góa kin-á-ji̍t boeh hioh-khùn, bô ài tha̍k-chheh.","Góa1 kin7-á1-ji̍t boeh2 hioh2-khùn, bô7 ài2 tha̍k3-chheh.","我今仔日欲歇睏, 無愛讀冊.",I'm going to take off today; I don't want to study.
-18,"Lán chit lé-pài ū saⁿ ji̍t ê hioh-khùn; lán lâi-khì chhit-thô.","Lán1 chit2 lé1-pài ū3 saⁿ7 ji̍t ê7 hioh2-khùn; lán1 lâi7-khì2 chhit2-thô.","咱這禮拜有三日的歇睏; 咱來去𨑨迌.",We have 3 days off this week; let's go have some fun.
+18,Lán chit lé-pài ū saⁿ ji̍t ê hioh-khùn; lán lâi-khì chhit-thô.,Lán1 chit2 lé1-pài ū3 saⁿ7 ji̍t ê7 hioh2-khùn; lán1 lâi7-khì2 chhit2-thô.,咱這禮拜有三日的歇睏; 咱來去𨑨迌.,We have 3 days off this week; let's go have some fun.
 19,"Lí boeh khì, hoⁿh?","Lí1 boeh2 khì, hoⁿh?","你欲去, 乎?","You're going, aren't you?"
 19,Hèⁿ.,Hèⁿ.,嘿.,Yes.
 20,Chit pún hō· lí khòaⁿ; iáu ū chi̍t pún góa boeh khòaⁿ.,Chit2 pún hō·3 lí1 khòaⁿ; iáu1 ū3 chi̍t3 pún góa1 boeh2 khòaⁿ.,這本予你看; 猶有一本我欲看.,I want you to read this book; I want to read the other one.
@@ -65,10 +65,10 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 26,Lí chang-àm khùn kúi tiám-cheng?,Lí1 chang7-àm khùn2 kúi1 tiám1-cheng?,你昨暗睏幾點鐘?,How many hours did you sleep last night?
 26,Lín Sian-siⁿ lè?,Lín1 Sian7-siⁿ lè?,恁先生咧?,Where's your husband?
 26,I teh khùn.,I7 teh2 khùn.,伊咧睏.,He's sleeping.
-27,"I khùn-khì a.","I7 khùn-khì a3, ka7-chōe á.","伊睏去矣.",He has gone to sleep.
-27,"I ka-chōe a.","I7 ka7-chōe a7.","伊加睡矣.",He has gone to sleep.
+27,I khùn-khì a.,"I7 khùn-khì a3, ka7-chōe a3.",伊睏去矣.,He has gone to sleep.
+27,I ka-chōe a.,I7 ka7-chōe a7.,伊加睡矣.,He has gone to sleep.
 27,"I teh khùn, m̄-kú iáu-bōe khùn-khì.","I7 teh2 khùn, m̄3-kú1 iáu1-bōe3 khùn-khì.","伊咧睏, 毋過猶未睏去.",He is in bed but hasn't gone to sleep yet.
-28,"Góa tiong-tàu bô khùn-tiong-tàu, chím-á chīn ài-khùn.","Góa1 tiong7-tàu bô7 khùn2-tiong7-tàu, chím1-á chīn3 ài2-khùn.","我中晝無睏中晝, 這馬真愛睏.",I didn't get a nap this noon and now I'm really sleepy.
+28,"Góa tiong-tàu bô khùn-tiong-tàu, chím-á chin ài-khùn.","Góa1 tiong7-tàu bô7 khùn2-tiong7-tàu, chím1-á chin7 ài2-khùn.","我中晝無睏中晝, 這馬真愛睏.",I didn't get a nap this noon and now I'm really sleepy.
 29,Lí ū chi̍t-chheng kho· bô·?,Lí1 ū3 chi̍t3-chheng7 kho· bô·3?,你有一千箍無?,Do you have $1000?
 29,Ū là.,Ū là.,有啦.,Yes.
 30,lâu-kha,lâu7-kha,樓跤,downstairs.
@@ -76,9 +76,9 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 30,Chhiáⁿ lí khit-khì lâu-kha.,Chhiáⁿ1 lí1 khit2-khì2 lâu7-kha.,請你起去樓跤.,Please go downstairs.
 30,Chit tiám-cheng góa tī lâu-kha.,Chit2 tiám1-cheng góa1 tī3 lâu7-kha.,這點鐘我佇樓跤.,I study downstairs this period.
 30,Chhiáⁿ lí khit-khì lâu-téng.,Chhiáⁿ1 lí1 khit2-khì2 lâu7-téng.,請你起去樓頂.,Please come upstairs.
-30,"I iáu tī tē-saⁿ lâu; iáu-bōe lo̍h-lâi.","I7 iáu1 tī3 tē3-saⁿ lâu; iáu1-bōe3 lo̍h-lâi3.","伊猶佇第三樓; 猶未落來.",He's still on the 3rd floor; he hasn't come down yet.
+30,I iáu tī tē-saⁿ lâu; iáu-bōe lo̍h-lâi.,I7 iáu1 tī3 tē3-saⁿ lâu; iáu1-bōe3 lo̍h-lâi3.,伊猶佇第三樓; 猶未落來.,He's still on the 3rd floor; he hasn't come down yet.
 30,Chit keng ū cha̍p lâu.,Chit2 keng ū3 cha̍p3 lâu.,這間有十樓.,This building has 10 stories.
-31,"Chit lé-pài goán bô tha̍k-chheh; lín ū bô·?","Chit2 lé1-pài goán1 bô7 tha̍k3-chheh; lín1 ū bô·3?","這禮拜阮無讀冊; 恁有無?","We don't have class this week; do you?"
+31,Chit lé-pài goán bô tha̍k-chheh; lín ū bô·?,Chit2 lé1-pài goán1 bô7 tha̍k3-chheh; lín1 ū bô·3?,這禮拜阮無讀冊; 恁有無?,We don't have class this week; do you?
 31,Chit khò góa tha̍k nn̄g lé-pài.,Chit2 khò góa1 tha̍k3 nn̄g3 lé1-pài.,這課我讀兩禮拜.,I studied this lesson for 2 weeks.
 33,lo̍h-chhia,lo̍h3-chhia,落車,to alight from a vehicle.
 33,lo̍h-lâi,lo̍h-lâi3,落來,to come down.
