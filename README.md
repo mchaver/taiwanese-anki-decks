@@ -3,7 +3,7 @@
 This is a curated collection of Taiwanese Language (Tâi-gí / Hokkien) Anki decks
 that I have generated from various sources. I used Claude to extract the vocabulary
 and example sentences from PDFs of the books, then I edited the transcription errors manually.
-There may still may be errors in transcription, tone change and use of Hàn-jī.
+There may still be errors in transcription, tone change, and use of Hàn-jī.
 
 Current collection:
 - [Maryknoll Taiwanese Book 1 with Hàn-jī on the front](maryknoll-book-1/decks/maryknoll_book1_all_hanji_front.apkg)

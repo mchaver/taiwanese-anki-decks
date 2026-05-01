@@ -222,7 +222,10 @@ def main() -> None:
         "Center, Taichung). Licensed under CC BY-NC-SA 4.0 — "
         "https://creativecommons.org/licenses/by-nc-sa/4.0/"
     )
-    all_hanji = genanki.Deck(
+    # Top-level parent decks (carry the description; no notes directly).
+    # The per-lesson subdecks are nested under these via "::" separators,
+    # which Anki preserves on import so users can disable or delete by lesson.
+    all_hanji_parent = genanki.Deck(
         ALL_HANJI_DECK_ID,
         "Maryknoll Book 1 - All (Hàn-jī)",
         description=(
@@ -232,7 +235,7 @@ def main() -> None:
             "and English gloss on the back.\n\n" + common_attribution
         ),
     )
-    all_poj = genanki.Deck(
+    all_poj_parent = genanki.Deck(
         ALL_POJ_DECK_ID,
         "Maryknoll Book 1 - All (Pe̍h-ōe-jī)",
         description=(
@@ -243,12 +246,29 @@ def main() -> None:
         ),
     )
 
+    HANJI_SUB_BASE = 2059500000
+    POJ_SUB_BASE = 2059510000
+
+    hanji_subdecks: list = []
+    poj_subdecks: list = []
+
     for lesson in LESSONS:
         vocab_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_vocab.csv")
         ex_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_vocab_examples.csv")
         rows_by_kind = {"vocab": vocab_rows, "example": ex_rows}
 
         base = f"Maryknoll Book 1 - Lesson {lesson}"
+        # Zero-padded for natural sort in Anki's deck browser.
+        lesson_label = f"Lesson {lesson:02d}"
+
+        # Subdecks under each combined parent. Distinct deck IDs from the
+        # per-lesson .apkg decks so they coexist if both are imported.
+        sub = {
+            ("vocab",   "hanji"): genanki.Deck(HANJI_SUB_BASE + lesson * 10 + 0, f"Maryknoll Book 1 - All (Hàn-jī)::{lesson_label}::Vocab"),
+            ("example", "hanji"): genanki.Deck(HANJI_SUB_BASE + lesson * 10 + 1, f"Maryknoll Book 1 - All (Hàn-jī)::{lesson_label}::Vocab Examples"),
+            ("vocab",   "poj"):   genanki.Deck(POJ_SUB_BASE   + lesson * 10 + 0, f"Maryknoll Book 1 - All (Pe̍h-ōe-jī)::{lesson_label}::Vocab"),
+            ("example", "poj"):   genanki.Deck(POJ_SUB_BASE   + lesson * 10 + 1, f"Maryknoll Book 1 - All (Pe̍h-ōe-jī)::{lesson_label}::Vocab Examples"),
+        }
 
         for idx, (kind, model, schema, file_suffix, deck_suffix, prefix, key) in enumerate(variants):
             deck = build_deck(
@@ -266,22 +286,28 @@ def main() -> None:
             total_notes += len(deck.notes)
             total_files += 1
 
-            # Mirror the same notes into the combined decks. Same GUIDs as
-            # per-lesson decks, so importing both yields no duplicates.
-            target = all_hanji if "hanji" in file_suffix else all_poj
+            # Mirror the same notes into the appropriate combined subdeck.
+            # Same GUIDs as per-lesson decks, so importing both yields no
+            # duplicates.
+            lang = "hanji" if "hanji" in file_suffix else "poj"
+            target = sub[(kind, lang)]
             for note in deck.notes:
                 target.add_note(note)
 
-    for combined, fname in [
-        (all_hanji, "maryknoll_book1_all_hanji_front.apkg"),
-        (all_poj, "maryknoll_book1_all_poj_front.apkg"),
+        hanji_subdecks.extend([sub[("vocab", "hanji")], sub[("example", "hanji")]])
+        poj_subdecks.extend([sub[("vocab", "poj")], sub[("example", "poj")]])
+
+    for parent, subdecks, fname in [
+        (all_hanji_parent, hanji_subdecks, "maryknoll_book1_all_hanji_front.apkg"),
+        (all_poj_parent,   poj_subdecks,   "maryknoll_book1_all_poj_front.apkg"),
     ]:
         out_path = OUT_DIR / fname
-        pkg = genanki.Package([combined])
+        pkg = genanki.Package([parent, *subdecks])
         pkg.media_files = [str(EMBEDDED_FONT)]
         pkg.write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
         normalize_zip_mtime(out_path)
-        print(f"  {out_path.name} ({len(combined.notes)} notes)")
+        note_count = sum(len(d.notes) for d in subdecks)
+        print(f"  {out_path.name} ({note_count} notes across {len(subdecks)} subdecks)")
         total_files += 1
 
     print(f"\nWrote {total_files} .apkg files to {OUT_DIR}/")
