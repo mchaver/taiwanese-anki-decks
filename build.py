@@ -202,15 +202,30 @@ def main() -> None:
     # Combined "all" decks — one for Hàn-jī front, one for Pe̍h-ōe-jī front,
     # each containing every vocab and example note across all lessons.
     # These are intended for AnkiWeb submission as standalone decks.
+    common_attribution = (
+        "Adapted from Maryknoll Taiwanese Book 1 (Maryknoll Language Service "
+        "Center, Taichung). Licensed under CC BY-NC-SA 4.0 — "
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    )
     all_hanji = genanki.Deck(
         ALL_HANJI_DECK_ID,
         "Maryknoll Book 1 - All (Hàn-jī)",
-        description="Vocabulary and example sentences from Maryknoll Taiwanese Book 1, with Taiwanese Hàn-jī (Han characters) on the front and Pe̍h-ōe-jī (POJ romanization), tone-sandhi annotations, Mandarin translation, and English gloss on the back.",
+        description=(
+            "Vocabulary and example sentences from Maryknoll Taiwanese Book 1, "
+            "with Taiwanese Hàn-jī (Han characters) on the front and Pe̍h-ōe-jī "
+            "(POJ romanization), tone-sandhi annotations, Mandarin translation, "
+            "and English gloss on the back.\n\n" + common_attribution
+        ),
     )
     all_poj = genanki.Deck(
         ALL_POJ_DECK_ID,
         "Maryknoll Book 1 - All (Pe̍h-ōe-jī)",
-        description="Vocabulary and example sentences from Maryknoll Taiwanese Book 1, with Pe̍h-ōe-jī (POJ romanization) on the front and Taiwanese Hàn-jī (Han characters), tone-sandhi annotations, Mandarin translation, and English gloss on the back.",
+        description=(
+            "Vocabulary and example sentences from Maryknoll Taiwanese Book 1, "
+            "with Pe̍h-ōe-jī (POJ romanization) on the front and Taiwanese Hàn-jī "
+            "(Han characters), tone-sandhi annotations, Mandarin translation, "
+            "and English gloss on the back.\n\n" + common_attribution
+        ),
     )
 
     for lesson in LESSONS:

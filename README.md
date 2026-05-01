@@ -65,3 +65,16 @@ Vocabulary, example sentences, and lesson structure are adapted from
 *Maryknoll Taiwanese Book 1*, published by the Maryknoll Language Service
 Center, Taichung, Taiwan. The Anki formatting, sandhi numbering scheme, and
 build pipeline in this repository are original work.
+
+## License
+
+This project is released under the **Creative Commons
+Attribution-NonCommercial-ShareAlike 4.0 International** license
+([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)).
+
+Maryknoll's source dictionary materials were released under CC BY-NC-SA
+3.0; CC BY-NC-SA 4.0 is a ShareAlike-compatible upgrade. In short: you may
+use, adapt, and redistribute these decks freely for non-commercial purposes
+provided you (a) credit Maryknoll Language Service Center as the source and
+(b) license your derivative work under the same terms. See `LICENSE` for
+the full notice.
