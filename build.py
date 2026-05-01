@@ -78,7 +78,7 @@ CSS = """
   font-size: 15px;
   font-style: italic;
   margin-top: 1em;
-  text-align: left;
+  text-align: center;
   padding: 0 1em;
 }
 hr { margin: 1em 0; border: 0; border-top: 1px solid #ddd; }
