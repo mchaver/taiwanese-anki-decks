@@ -13,7 +13,7 @@ This project turns vocabulary and example sentences from the Maryknoll Taiwanese
 
 1. Render the relevant pages: `pdftoppm -r 200 -f <start> -l <end> <book>.pdf /tmp/pg` then `sips -s format png ...`.
 2. Read the PNGs to transcribe vocabulary and example sentences.
-3. Write two CSVs: `maryknoll_book{N}_lesson{M}_vocab.csv` and `..._examples.csv`.
+3. Write two CSVs: `maryknoll_book{N}_lesson{M}_vocab.csv` and `..._vocab_examples.csv`.
 4. Add the lesson number to `LESSONS` in `build.py`.
 5. Run `.venv/bin/python build.py` and verify no malformed rows.
 
