@@ -6,8 +6,8 @@ and example sentences from PDFs of the books, then I edited the transcription er
 There may still be errors in transcription, tone change, and use of Hàn-jī.
 
 Current collection:
-- [Maryknoll Taiwanese Book 1 with Hàn-jī on the front](maryknoll-book-1/decks/maryknoll_book1_all_hanji_front.apkg)
-- [Maryknoll Taiwanese Book 1 with Pe̍h-ōe-jī on the front](maryknoll-book-1/decks/maryknoll_book1_all_poj_front.apkg)
+- [Maryknoll Taiwanese Book 1 with Hàn-jī on the front](https://ankiweb.net/shared/info/1081468770)
+- [Maryknoll Taiwanese Book 1 with Pe̍h-ōe-jī on the front](https://ankiweb.net/shared/info/1101513782)
 
 ## How to generate the decks from the CSVs
 
