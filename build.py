@@ -25,8 +25,8 @@ import genanki
 # Fixed build timestamp — makes .apkg output reproducible so identical CSVs
 # produce byte-identical files. Without this, every rebuild rewrites note/card
 # mod times and zip entry mtimes, polluting git diffs.
-BUILD_TIMESTAMP = 1577836800.0  # 2020-01-01 UTC
-ZIP_MTIME = (2020, 1, 1, 0, 0, 0)
+BUILD_TIMESTAMP = 1777593600.0  # 2026-05-01 UTC
+ZIP_MTIME = (2026, 5, 1, 0, 0, 0)
 
 ROOT = Path(__file__).parent
 BOOK_DIR = ROOT / "maryknoll-book-1"
