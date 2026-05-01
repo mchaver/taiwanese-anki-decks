@@ -41,6 +41,8 @@ MODEL_ID_EX_HANJI = 1607390003
 MODEL_ID_EX_POJ = 1607390004
 
 DECK_ID_BASE = 2059400000
+ALL_HANJI_DECK_ID = 2059499001
+ALL_POJ_DECK_ID = 2059499002
 
 CSS = """
 .card {
@@ -197,6 +199,12 @@ def main() -> None:
     total_notes = 0
     total_files = 0
 
+    # Combined "all" decks — one for Hàn-jī front, one for Pe̍h-ōe-jī front,
+    # each containing every vocab and example note across all lessons.
+    # These are intended for AnkiWeb submission as standalone decks.
+    all_hanji = genanki.Deck(ALL_HANJI_DECK_ID, "Maryknoll Book 1 - All (Hàn-jī)")
+    all_poj = genanki.Deck(ALL_POJ_DECK_ID, "Maryknoll Book 1 - All (Pe̍h-ōe-jī)")
+
     for lesson in LESSONS:
         vocab_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_vocab.csv")
         ex_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_vocab_examples.csv")
@@ -218,8 +226,24 @@ def main() -> None:
             total_notes += len(deck.notes)
             total_files += 1
 
+            # Mirror the same notes into the combined decks. Same GUIDs as
+            # per-lesson decks, so importing both yields no duplicates.
+            target = all_hanji if "hanji" in file_suffix else all_poj
+            for note in deck.notes:
+                target.add_note(note)
+
+    for combined, fname in [
+        (all_hanji, "maryknoll_book1_all_hanji_front.apkg"),
+        (all_poj, "maryknoll_book1_all_poj_front.apkg"),
+    ]:
+        out_path = OUT_DIR / fname
+        genanki.Package([combined]).write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
+        normalize_zip_mtime(out_path)
+        print(f"  {out_path.name} ({len(combined.notes)} notes)")
+        total_files += 1
+
     print(f"\nWrote {total_files} .apkg files to {OUT_DIR}/")
-    print(f"  {total_notes} notes total")
+    print(f"  {total_notes} notes total (combined decks share these notes)")
 
 
 if __name__ == "__main__":
