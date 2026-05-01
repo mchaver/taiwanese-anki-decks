@@ -25,13 +25,18 @@ import genanki
 # Fixed build timestamp — makes .apkg output reproducible so identical CSVs
 # produce byte-identical files. Without this, every rebuild rewrites note/card
 # mod times and zip entry mtimes, polluting git diffs.
-BUILD_TIMESTAMP = 1577836800.0  # 2020-01-01 UTC
-ZIP_MTIME = (2020, 1, 1, 0, 0, 0)
+BUILD_TIMESTAMP = 1777593600.0  # 2026-05-01 UTC
+ZIP_MTIME = (2026, 5, 1, 0, 0, 0)
 
 ROOT = Path(__file__).parent
 BOOK_DIR = ROOT / "maryknoll-book-1"
 CSV_DIR = BOOK_DIR / "csv"
 OUT_DIR = BOOK_DIR / "decks"
+ASSETS_DIR = ROOT / "assets"
+
+# Embedded font for POJ rendering. Charis SIL is SIL OFL licensed — the OFL
+# is specifically designed to permit font embedding in documents like .apkg.
+EMBEDDED_FONT = ASSETS_DIR / "_charis-regular.ttf"
 
 LESSONS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
@@ -41,8 +46,16 @@ MODEL_ID_EX_HANJI = 1607390003
 MODEL_ID_EX_POJ = 1607390004
 
 DECK_ID_BASE = 2059400000
+ALL_HANJI_DECK_ID = 2059499001
+ALL_POJ_DECK_ID = 2059499002
 
 CSS = """
+@font-face {
+  font-family: "Charis SIL";
+  src: url("_charis-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .card {
   font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-size: 22px;
@@ -52,7 +65,11 @@ CSS = """
   padding: 1em;
 }
 .front-big { font-size: 42px; margin: 0.5em 0; }
-.poj { font-family: "Charis SIL", "Noto Serif", serif; }
+.poj {
+  font-family: "Charis SIL", "Charis SIL Compact", "Doulos SIL",
+               "Gentium Plus", "Gentium", "Noto Serif",
+               "Times New Roman", "Times", serif;
+}
 .sandhi { color: #555; font-size: 18px; }
 .mandarin { color: #666; }
 .english { color: #333; }
@@ -61,7 +78,7 @@ CSS = """
   font-size: 15px;
   font-style: italic;
   margin-top: 1em;
-  text-align: left;
+  text-align: center;
   padding: 0 1em;
 }
 hr { margin: 1em 0; border: 0; border-top: 1px solid #ddd; }
@@ -190,19 +207,68 @@ def main() -> None:
         # (kind, model, schema, filename_suffix, deck_name_suffix, guid_prefix, key)
         ("vocab",   vocab_hanji_model,   VOCAB_FIELDS,   "vocab_hanji_front",    "Vocab (Hàn-jī)",       "v-h", "number"),
         ("vocab",   vocab_poj_model,     VOCAB_FIELDS,   "vocab_poj_front",      "Vocab (Pe̍h-ōe-jī)",    "v-p", "number"),
-        ("example", example_hanji_model, EXAMPLE_FIELDS, "examples_hanji_front", "Examples (Hàn-jī)",    "e-h", "vocab_number"),
-        ("example", example_poj_model,   EXAMPLE_FIELDS, "examples_poj_front",   "Examples (Pe̍h-ōe-jī)", "e-p", "vocab_number"),
+        ("example", example_hanji_model, EXAMPLE_FIELDS, "vocab_examples_hanji_front", "Vocab Examples (Hàn-jī)",    "e-h", "vocab_number"),
+        ("example", example_poj_model,   EXAMPLE_FIELDS, "vocab_examples_poj_front",   "Vocab Examples (Pe̍h-ōe-jī)", "e-p", "vocab_number"),
     ]
 
     total_notes = 0
     total_files = 0
 
+    # Combined "all" decks — one for Hàn-jī front, one for Pe̍h-ōe-jī front,
+    # each containing every vocab and example note across all lessons.
+    # These are intended for AnkiWeb submission as standalone decks.
+    common_attribution = (
+        "Adapted from Maryknoll Taiwanese Book 1 (Maryknoll Language Service "
+        "Center, Taichung). Licensed under CC BY-NC-SA 4.0 — "
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    )
+    # Top-level parent decks (carry the description; no notes directly).
+    # The per-lesson subdecks are nested under these via "::" separators,
+    # which Anki preserves on import so users can disable or delete by lesson.
+    all_hanji_parent = genanki.Deck(
+        ALL_HANJI_DECK_ID,
+        "Maryknoll Book 1 - All (Hàn-jī)",
+        description=(
+            "Vocabulary and example sentences from Maryknoll Taiwanese Book 1, "
+            "with Taiwanese Hàn-jī (Han characters) on the front and Pe̍h-ōe-jī "
+            "(POJ romanization), tone-sandhi annotations, Mandarin translation, "
+            "and English gloss on the back.\n\n" + common_attribution
+        ),
+    )
+    all_poj_parent = genanki.Deck(
+        ALL_POJ_DECK_ID,
+        "Maryknoll Book 1 - All (Pe̍h-ōe-jī)",
+        description=(
+            "Vocabulary and example sentences from Maryknoll Taiwanese Book 1, "
+            "with Pe̍h-ōe-jī (POJ romanization) on the front and Taiwanese Hàn-jī "
+            "(Han characters), tone-sandhi annotations, Mandarin translation, "
+            "and English gloss on the back.\n\n" + common_attribution
+        ),
+    )
+
+    HANJI_SUB_BASE = 2059500000
+    POJ_SUB_BASE = 2059510000
+
+    hanji_subdecks: list = []
+    poj_subdecks: list = []
+
     for lesson in LESSONS:
         vocab_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_vocab.csv")
-        ex_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_examples.csv")
+        ex_rows = load_csv(CSV_DIR / f"maryknoll_book1_lesson{lesson}_vocab_examples.csv")
         rows_by_kind = {"vocab": vocab_rows, "example": ex_rows}
 
         base = f"Maryknoll Book 1 - Lesson {lesson}"
+        # Zero-padded for natural sort in Anki's deck browser.
+        lesson_label = f"Lesson {lesson:02d}"
+
+        # Subdecks under each combined parent. Distinct deck IDs from the
+        # per-lesson .apkg decks so they coexist if both are imported.
+        sub = {
+            ("vocab",   "hanji"): genanki.Deck(HANJI_SUB_BASE + lesson * 10 + 0, f"Maryknoll Book 1 - All (Hàn-jī)::{lesson_label}::Vocab"),
+            ("example", "hanji"): genanki.Deck(HANJI_SUB_BASE + lesson * 10 + 1, f"Maryknoll Book 1 - All (Hàn-jī)::{lesson_label}::Vocab Examples"),
+            ("vocab",   "poj"):   genanki.Deck(POJ_SUB_BASE   + lesson * 10 + 0, f"Maryknoll Book 1 - All (Pe̍h-ōe-jī)::{lesson_label}::Vocab"),
+            ("example", "poj"):   genanki.Deck(POJ_SUB_BASE   + lesson * 10 + 1, f"Maryknoll Book 1 - All (Pe̍h-ōe-jī)::{lesson_label}::Vocab Examples"),
+        }
 
         for idx, (kind, model, schema, file_suffix, deck_suffix, prefix, key) in enumerate(variants):
             deck = build_deck(
@@ -212,14 +278,40 @@ def main() -> None:
                 f"mk-l{lesson}-{prefix}", key,
             )
             out_path = OUT_DIR / f"maryknoll_book1_lesson{lesson}_{file_suffix}.apkg"
-            genanki.Package([deck]).write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
+            pkg = genanki.Package([deck])
+            pkg.media_files = [str(EMBEDDED_FONT)]
+            pkg.write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
             normalize_zip_mtime(out_path)
             print(f"  {out_path.name} ({len(deck.notes)} notes)")
             total_notes += len(deck.notes)
             total_files += 1
 
+            # Mirror the same notes into the appropriate combined subdeck.
+            # Same GUIDs as per-lesson decks, so importing both yields no
+            # duplicates.
+            lang = "hanji" if "hanji" in file_suffix else "poj"
+            target = sub[(kind, lang)]
+            for note in deck.notes:
+                target.add_note(note)
+
+        hanji_subdecks.extend([sub[("vocab", "hanji")], sub[("example", "hanji")]])
+        poj_subdecks.extend([sub[("vocab", "poj")], sub[("example", "poj")]])
+
+    for parent, subdecks, fname in [
+        (all_hanji_parent, hanji_subdecks, "maryknoll_book1_all_hanji_front.apkg"),
+        (all_poj_parent,   poj_subdecks,   "maryknoll_book1_all_poj_front.apkg"),
+    ]:
+        out_path = OUT_DIR / fname
+        pkg = genanki.Package([parent, *subdecks])
+        pkg.media_files = [str(EMBEDDED_FONT)]
+        pkg.write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
+        normalize_zip_mtime(out_path)
+        note_count = sum(len(d.notes) for d in subdecks)
+        print(f"  {out_path.name} ({note_count} notes across {len(subdecks)} subdecks)")
+        total_files += 1
+
     print(f"\nWrote {total_files} .apkg files to {OUT_DIR}/")
-    print(f"  {total_notes} notes total")
+    print(f"  {total_notes} notes total (combined decks share these notes)")
 
 
 if __name__ == "__main__":

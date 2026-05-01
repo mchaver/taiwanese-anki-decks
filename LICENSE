@@ -1,0 +1,54 @@
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+(CC BY-NC-SA 4.0)
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-
+ShareAlike 4.0 International License. The full legal code is available at:
+
+    https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+A human-readable summary is available at:
+
+    https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made.
+  - NonCommercial — You may not use the material for commercial purposes.
+  - ShareAlike — If you remix, transform, or build upon the material, you
+    must distribute your contributions under the same license as the
+    original.
+
+----------------------------------------------------------------------
+
+Source attribution
+==================
+
+Vocabulary, example sentences, and lesson structure are adapted from
+"Maryknoll Taiwanese Book 1", published by the Maryknoll Language Service
+Center, Taichung, Taiwan. The Maryknoll dictionary materials from which
+this work draws were released by Maryknoll under the Creative Commons
+Attribution-NonCommercial-ShareAlike 3.0 license. This derivative work is
+distributed under CC BY-NC-SA 4.0, which is a permitted ShareAlike-
+compatible upgrade.
+
+Modifications include: re-tabulation as Anki note CSVs; addition of
+tone-sandhi numbering; selection of Taiwan Ministry of Education (MOE)
+recommended Taiwanese Hàn-jī forms; and packaging as Anki .apkg decks.
+
+----------------------------------------------------------------------
+
+Bundled font
+============
+
+The .apkg files bundle "Charis SIL" (Charis-Regular.ttf) by SIL Global,
+which is licensed under the SIL Open Font License v1.1 (SIL OFL). The
+SIL OFL specifically permits font embedding in documents and
+redistribution of unmodified fonts. The full OFL text is included in
+this repository at `assets/CHARIS-OFL.txt` and is also available at
+https://openfontlicense.org/. The SIL OFL applies only to the embedded
+font file and is independent of the CC BY-NC-SA 4.0 license that covers
+the rest of this work.
