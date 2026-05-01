@@ -38,3 +38,17 @@ compatible upgrade.
 Modifications include: re-tabulation as Anki note CSVs; addition of
 tone-sandhi numbering; selection of Taiwan Ministry of Education (MOE)
 recommended Taiwanese Hàn-jī forms; and packaging as Anki .apkg decks.
+
+----------------------------------------------------------------------
+
+Bundled font
+============
+
+The .apkg files bundle "Charis SIL" (Charis-Regular.ttf) by SIL Global,
+which is licensed under the SIL Open Font License v1.1 (SIL OFL). The
+SIL OFL specifically permits font embedding in documents and
+redistribution of unmodified fonts. The full OFL text is included in
+this repository at `assets/CHARIS-OFL.txt` and is also available at
+https://openfontlicense.org/. The SIL OFL applies only to the embedded
+font file and is independent of the CC BY-NC-SA 4.0 license that covers
+the rest of this work.

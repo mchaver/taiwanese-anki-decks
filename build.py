@@ -32,6 +32,11 @@ ROOT = Path(__file__).parent
 BOOK_DIR = ROOT / "maryknoll-book-1"
 CSV_DIR = BOOK_DIR / "csv"
 OUT_DIR = BOOK_DIR / "decks"
+ASSETS_DIR = ROOT / "assets"
+
+# Embedded font for POJ rendering. Charis SIL is SIL OFL licensed — the OFL
+# is specifically designed to permit font embedding in documents like .apkg.
+EMBEDDED_FONT = ASSETS_DIR / "_charis-regular.ttf"
 
 LESSONS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 
@@ -45,6 +50,12 @@ ALL_HANJI_DECK_ID = 2059499001
 ALL_POJ_DECK_ID = 2059499002
 
 CSS = """
+@font-face {
+  font-family: "Charis SIL";
+  src: url("_charis-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .card {
   font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   font-size: 22px;
@@ -54,7 +65,11 @@ CSS = """
   padding: 1em;
 }
 .front-big { font-size: 42px; margin: 0.5em 0; }
-.poj { font-family: "Charis SIL", "Noto Serif", serif; }
+.poj {
+  font-family: "Charis SIL", "Charis SIL Compact", "Doulos SIL",
+               "Gentium Plus", "Gentium", "Noto Serif",
+               "Times New Roman", "Times", serif;
+}
 .sandhi { color: #555; font-size: 18px; }
 .mandarin { color: #666; }
 .english { color: #333; }
@@ -243,7 +258,9 @@ def main() -> None:
                 f"mk-l{lesson}-{prefix}", key,
             )
             out_path = OUT_DIR / f"maryknoll_book1_lesson{lesson}_{file_suffix}.apkg"
-            genanki.Package([deck]).write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
+            pkg = genanki.Package([deck])
+            pkg.media_files = [str(EMBEDDED_FONT)]
+            pkg.write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
             normalize_zip_mtime(out_path)
             print(f"  {out_path.name} ({len(deck.notes)} notes)")
             total_notes += len(deck.notes)
@@ -260,7 +277,9 @@ def main() -> None:
         (all_poj, "maryknoll_book1_all_poj_front.apkg"),
     ]:
         out_path = OUT_DIR / fname
-        genanki.Package([combined]).write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
+        pkg = genanki.Package([combined])
+        pkg.media_files = [str(EMBEDDED_FONT)]
+        pkg.write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
         normalize_zip_mtime(out_path)
         print(f"  {out_path.name} ({len(combined.notes)} notes)")
         total_files += 1
