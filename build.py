@@ -56,7 +56,7 @@ ESSAY_DECK_ID_BASE = 2059600100  # +1 per essay
 # Essays — each entry produces a subdeck under "Taiwanese Essays".
 # slug maps to essays/<slug>/csv/<slug>_vocab.csv (and decks output there).
 ESSAYS = [
-    {"slug": "khah-tah-chhia", "title": "Khah-tah-chhia"},
+    {"slug": "khah-tah-chhia", "title": "寒流騎腳踏車"},
 ]
 
 CSS = """
