@@ -321,9 +321,10 @@ def main() -> None:
         total_files += 1
 
     # ---- Essay decks ----
-    # Each essay produces one Hàn-jī-front vocab deck nested under a shared
-    # "Taiwanese Essays" parent so users can keep them distinct from the
-    # Maryknoll material in their Anki collection.
+    # Each essay produces a Hàn-jī-front vocab deck and a vocab_examples deck
+    # nested under a shared "Taiwanese Essays" parent. Example sentences are
+    # author-original (illustrative usage written for these decks), distinct
+    # from the source essay text.
     if ESSAYS:
         essays_parent = genanki.Deck(
             ESSAYS_PARENT_DECK_ID,
@@ -331,34 +332,48 @@ def main() -> None:
             description=(
                 "Vocabulary collected from Taiwanese-language essays. Each "
                 "subdeck corresponds to one essay; cards have Hàn-jī on the "
-                "front and POJ, sandhi, Mandarin, and English on the back."
+                "front and POJ, sandhi, Mandarin, and English on the back. "
+                "Example sentences in the Vocab Examples sub-subdecks are "
+                "original illustrative usage, not extracts from the source "
+                "essays."
             ),
         )
-        essay_subdecks = []
         for idx, essay in enumerate(ESSAYS):
             slug = essay["slug"]
             title = essay["title"]
             essay_dir = ESSAYS_DIR / slug
-            essay_csv = essay_dir / "csv" / f"{slug}_vocab.csv"
+            essay_csv_dir = essay_dir / "csv"
             essay_decks_dir = essay_dir / "decks"
             essay_decks_dir.mkdir(parents=True, exist_ok=True)
 
-            rows = load_csv(essay_csv)
-            sub = build_deck(
-                ESSAY_DECK_ID_BASE + idx,
-                f"Taiwanese Essays::{title}",
-                vocab_hanji_model, rows, VOCAB_FIELDS,
+            vocab_rows = load_csv(essay_csv_dir / f"{slug}_vocab.csv")
+            vocab_deck = build_deck(
+                ESSAY_DECK_ID_BASE + idx * 2,
+                f"Taiwanese Essays::{title}::Vocab",
+                vocab_hanji_model, vocab_rows, VOCAB_FIELDS,
                 f"essay-{slug}-v-h", "number",
             )
-            essay_subdecks.append(sub)
 
-            out_path = essay_decks_dir / f"{slug}_vocab_hanji_front.apkg"
-            pkg = genanki.Package([essays_parent, sub])
+            ex_csv = essay_csv_dir / f"{slug}_vocab_examples.csv"
+            sub_decks = [vocab_deck]
+            if ex_csv.exists():
+                ex_rows = load_csv(ex_csv)
+                ex_deck = build_deck(
+                    ESSAY_DECK_ID_BASE + idx * 2 + 1,
+                    f"Taiwanese Essays::{title}::Vocab Examples",
+                    example_hanji_model, ex_rows, EXAMPLE_FIELDS,
+                    f"essay-{slug}-e-h", "vocab_number",
+                )
+                sub_decks.append(ex_deck)
+
+            out_path = essay_decks_dir / f"{slug}_hanji_front.apkg"
+            pkg = genanki.Package([essays_parent, *sub_decks])
             pkg.media_files = [str(EMBEDDED_FONT)]
             pkg.write_to_file(out_path, timestamp=BUILD_TIMESTAMP)
             normalize_zip_mtime(out_path)
-            print(f"  {out_path.relative_to(ROOT)} ({len(sub.notes)} notes)")
-            total_notes += len(sub.notes)
+            note_count = sum(len(d.notes) for d in sub_decks)
+            print(f"  {out_path.relative_to(ROOT)} ({note_count} notes across {len(sub_decks)} subdecks)")
+            total_notes += note_count
             total_files += 1
 
     print(f"\nWrote {total_files} .apkg files")
