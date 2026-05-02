@@ -324,7 +324,9 @@ def main() -> None:
     # Each essay produces a Hàn-jī-front vocab deck and a vocab_examples deck
     # nested under a shared "Taiwanese Essays" parent. Example sentences are
     # author-original (illustrative usage written for these decks), distinct
-    # from the source essay text.
+    # from the source essay text. After per-essay packages are emitted, a
+    # combined "all essays" .apkg is written at essays/ for AnkiWeb-style
+    # one-shot sharing.
     if ESSAYS:
         essays_parent = genanki.Deck(
             ESSAYS_PARENT_DECK_ID,
@@ -338,6 +340,8 @@ def main() -> None:
                 "essays."
             ),
         )
+        all_essay_subdecks: list = []
+
         for idx, essay in enumerate(ESSAYS):
             slug = essay["slug"]
             title = essay["title"]
@@ -375,6 +379,20 @@ def main() -> None:
             print(f"  {out_path.relative_to(ROOT)} ({note_count} notes across {len(sub_decks)} subdecks)")
             total_notes += note_count
             total_files += 1
+
+            all_essay_subdecks.extend(sub_decks)
+
+        # Combined all-essays deck — one .apkg containing every essay subdeck.
+        # Same GUIDs as per-essay decks, so importing both yields no
+        # duplicates.
+        combined_path = ESSAYS_DIR / "all_essays_hanji_front.apkg"
+        pkg = genanki.Package([essays_parent, *all_essay_subdecks])
+        pkg.media_files = [str(EMBEDDED_FONT)]
+        pkg.write_to_file(combined_path, timestamp=BUILD_TIMESTAMP)
+        normalize_zip_mtime(combined_path)
+        combined_count = sum(len(d.notes) for d in all_essay_subdecks)
+        print(f"  {combined_path.relative_to(ROOT)} ({combined_count} notes across {len(all_essay_subdecks)} subdecks)")
+        total_files += 1
 
     print(f"\nWrote {total_files} .apkg files")
     print(f"  {total_notes} notes total (combined decks share these notes)")
