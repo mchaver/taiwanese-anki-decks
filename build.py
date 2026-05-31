@@ -58,7 +58,7 @@ BOOKS = [
     },
     {
         "num": 2,
-        "lessons": [21],
+        "lessons": [14, 21],
         "dir": ROOT / "maryknoll-book-2",
         "deck_id_base": 2059700000,
         "all_hanji_deck_id": 2059799001,

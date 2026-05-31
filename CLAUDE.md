@@ -11,11 +11,7 @@ This project turns vocabulary and example sentences from the Maryknoll Taiwanese
 
 ## Extracting a new lesson
 
-1. Render the relevant pages: `pdftoppm -r 200 -f <start> -l <end> <book>.pdf /tmp/pg` then `sips -s format png ...`.
-2. Read the PNGs to transcribe vocabulary and example sentences.
-3. Write two CSVs: `maryknoll_book{N}_lesson{M}_vocab.csv` and `..._vocab_examples.csv`.
-4. Add the lesson number to `LESSONS` in `build.py`.
-5. Run `.venv/bin/python build.py` and verify no malformed rows.
+Use the **`extract-lesson` skill** (`.claude/skills/extract-lesson/`) — it has the full PDF→CSV workflow (rendering pages, transcribing POJ + tone-sandhi numbers from the scanned images, delegating page transcription to subagents to dodge the image-context cap, writing the two CSVs, and building). In brief: render pages → transcribe → write `maryknoll_book{N}_lesson{M}_vocab.csv` + `..._vocab_examples.csv` → add the lesson to `LESSONS` in `build.py` → `.venv/bin/python build.py` and verify row counts.
 
 ## CSV schemas
 
@@ -30,6 +26,18 @@ One row per headword. The `notes` column holds parenthetical explanations, gramm
 `vocab_number, poj, poj_sandhi, taiwanese_hanji, english`
 
 Normalized — one row per example sentence, `vocab_number` is a foreign key to the vocab CSV. A vocab entry can have 0 or many examples.
+
+The examples file holds **only full example sentences**. Do not put bare vocabulary words here.
+
+### Sub-headwords (words listed under a main entry)
+
+Under a numbered main headword the book often lists **derived words / sub-headwords** — these are real vocabulary, not example sentences. Examples: `a-só` under `a-hiaⁿ`; the son/daughter terms (`cha-po·-kiáⁿ`, `hāu-seⁿ`, …) under `kiáⁿ`; the literary number readings under the `it/jī/…` entry; verb-object collocations the book sets as sub-entries (`chò kang`, `khui kang-tiûⁿ`, `kóng kò·-sū`). The distinction: a sub-headword is a word/phrase with a gloss; an example is a full sentence with a translation.
+
+Handle them as follows:
+
+- **Each sub-headword becomes its own row in the *vocab* file**, inserted immediately **after its parent**, then the whole list is **renumbered sequentially** in book order. (Give it a `mandarin` gloss and move any parenthetical from the gloss into `notes`, like any vocab entry.)
+- **Example sentences stay in the examples file**, with their `vocab_number` re-pointed to the parent's new number (sentences keep illustrating the main headword).
+- After renumbering, validate: every `vocab_number` in examples must exist in vocab (no orphan foreign keys), and `build.py` row counts should match expectations.
 
 ### CSV quoting
 
@@ -74,7 +82,7 @@ Examples: `Gâu7-chá`, `lōa3-chē`, `Che ài2 lōa3-chē`.
 1. **Single-character nouns** usually do **not** change tone (e.g., `chhù`, `chheh`, `mn̂g` stay at base tone even in non-final position).
 2. **The last character of a noun / noun phrase** usually does not change tone.
 3. **Demonstrative pronouns** (`che`, `he`, `chia`, `hia`) do not change tone. (Note: `chit`/`hit` are demonstrative *modifiers* — they sandhi normally as tone 4 → 2.)
-4. **Sentence-final enclitics** (`bô·?`, `lè?`, `bōe?`, `a`) do not cause the preceding word to sandhi. The enclitic itself often takes its own special sandhi tone (e.g., `bô·3?`, `bōe3?`), documented per-enclitic. In particular: enclitic `lâi` after `tńg`/`khit`/`loh`/`peh-...` at end of clause sandhis to tone 3 (written `lâi3`), while the verb stays at base; enclitic `khì` in the same position stays at base tone (its base is already 3).
+4. **Enclitics sit outside the tone group (the "1-3-7 rule").** A clause-final enclitic — question particles `bô·?`/`bē?`/`bōe?`/`lè?`, perfect `a`, nominalizer `ê`, directional `lâi`/`khì`, a sentence-final pronoun, the "see" complements `-tio̍h`/`-kìⁿ`, the double enclitic `-chit-ē` — does **not** make the word it attaches to sandhi: that host word behaves as phrase-final and stays at **base** tone. The enclitic's **own** tone follows the **1-3-7 rule**: it sits at **tone 3**, but surfaces as **tone 7** when the syllable it attaches to carries **tone 7 in context** (base or sandhied). Examples → 7: `hō ê7`, `bô7-tī-lē a7`, `kúi nî-ê7`; → 3 (default): `bé-ê3`, `kú a3`, `chia̍h-khì ê3`, `kóng-chit3-ē3`, `tán-chit3-ē3`. Per-enclitic specifics: directional `lâi` → `lâi3` (e.g. after `tńg`/`khit`/`lo̍h`/`peh-` — `tō3 tńg-lâi3`); directional `khì` and `-kìⁿ` stay base (their base is already tone 3 — `chhut-khì`, `khòaⁿ-kìⁿ`); `-tio̍h` → `tio̍h3` (`khòaⁿ-tio̍h3`); question particles `bô·`/`bē`/`bōe` are fixed at tone 3 (`bô·3?`, `bē3?`). **If material follows the enclitic**, the host is no longer phrase-final and sandhis normally: `khòaⁿ2-tio̍h3 góa...` (vs clause-final `khòaⁿ-tio̍h3`), `ē3-ēng3-tit2 khiâ ...` (vs clause-final `ē3-ēng-tit3`). When in doubt, defer to the book's printed numbers.
 5. **Proper nouns / surnames** (e.g., `Tân`, `N̂g`) often don't sandhi.
 6. **Comma and semicolon** break the tone group: the syllable before the punctuation stays at its base tone.
 7. **Diminutive suffix `-á`** stays at its base tone and does not sandhi, even in non-final positions (e.g., `í1-á-kha`, `toh2-á-téng`, `chím1-á teh2 tha̍k3-chheh`).
@@ -83,9 +91,11 @@ Examples: `Gâu7-chá`, `lōa3-chē`, `Che ài2 lōa3-chē`.
    - **Alone as a noun** (no surname directly before, e.g., `Lín sian-siⁿ`, `sím-mih sian-siⁿ`): tones are **7-1** → `sian7-siⁿ`.
    - **Preceded by a surname** (e.g., `Tân Sian-siⁿ`, `Khó· Sian-siⁿ`, `Tē Sian-siⁿ`): the **surname does not change tone** and Sian-siⁿ becomes **3-3** → `Tân Sian3-siⁿ3`, `Khó· Sian3-siⁿ3`, `Tē Sian3-siⁿ3`.
 10. **`ē-hiáu` questions pair with `bē`** (not `bô·`). The form is `... ē-hiáu ... bē?` (會...袂?), not `... ē-hiáu ... bô·?`. `bē` at the end of such a question takes sandhi tone 3 (`bē3`), and (like `bô·3`) it does not trigger sandhi on the preceding word. Example: `Lí ē-hiáu khòaⁿ sî-cheng bē?` → `Lí1 ē3-hiáu1 khòaⁿ2 sî7-cheng bē3?`
-11. **`iōng + Verb + ê` construction** ("by means of"): the verb does **not** sandhi. The trailing `ê` follows the 1-3-7 rule: at sentence end `ê` → tone 3 (`ê3`); mid-sentence `ê` → tone 7 (`ê7`). Example: `iōng3-kiâⁿ-ê7 lâi`, `iōng3-siá-ê3`.
+11. **`iōng + Verb + ê` construction** ("by means of"): the verb does **not** sandhi, and the trailing `ê` follows the 1-3-7 rule (rule 4). Examples: `iōng3-kiâⁿ-ê7 lâi` (`kiâⁿ` carries tone 7 in context → `ê7`), `iōng3-siá-ê3` (`siá` is tone 2 → `ê3`).
 12. **Verb + pronoun at sentence end**: when a sentence ends with a verb (or verb compound) immediately followed by a pronoun, the **last syllable of the verb does not change tone**, and the **pronoun shifts per the 1-3-7 rule** (in practice landing on tone 3 — e.g., `i` tone 1 → `i3`, `góa` tone 2 → `góa3`). Example: `Góa m̄-bat i.` → `Góa1 m̄3-bat i3.`
-13. **Sentence-final perfect-tense particle `a`** (矣) is base tone 1 and is written without a diacritic to distinguish it from the diminutive suffix `-á` (which is hyphenated). At end of clause/sentence it follows the 1-3-7 rule and lands on tone 3 (`a3`). The preceding word is unaffected (it is the last content word of the clause, so it stays at its base tone). Examples: `Hō· lo̍h a.` → `Hō· lo̍h a3.`; `Góa chia̍h pá a.` → `Góa1 chia̍h3 pá a3.`; `chím-á bô a.` → `chím1-á bô a3.`
+13. **Sentence-final perfect-tense particle `a`** (矣) is base tone 1 and is written without a diacritic to distinguish it from the diminutive suffix `-á` (which is hyphenated). It follows the 1-3-7 rule (rule 4): tone 3 by default, tone 7 after a tone-7 host. The preceding word is unaffected (it is the last content word of the clause, so it stays at its base tone). Examples: `Góa chia̍h pá a.` → `Góa1 chia̍h3 pá a3.`; `chím-á bô a.` → `chím1-á bô a3.`; `Goán pa-pah bô-tī-lē a.` → `goán1 pa-pah bô7-tī-lē a7` (host `lē` is tone 7 → `a7`).
+
+14. **Potential / resultative complement `V-ē/bē-X`** ("can / can't manage to …") is one tone group: the verb sandhis, `ē`/`bē` → tone 3, and the **final** complement stays at base. Examples: `kóng1-bē3-thong`, `phah2-bē3-thong`, `chia̍h3 ē3 liáu1 bē3`.
 
 When in doubt, defer to explicit tone numbers above syllables on the book page.
 
