@@ -97,6 +97,8 @@ Examples: `Gâu7-chá`, `lōa3-chē`, `Che ài2 lōa3-chē`.
 
 14. **Potential / resultative complement `V-ē/bē-X`** ("can / can't manage to …") is one tone group: the verb sandhis, `ē`/`bē` → tone 3, and the **final** complement stays at base. Examples: `kóng1-bē3-thong`, `phah2-bē3-thong`, `chia̍h3 ē3 liáu1 bē3`.
 
+15. **Causative `hō·` (予) + adjective stays at base tone.** When `hō·` introduces a resultative/causative adjective — "do something so as to *make it* X" — it does **not** sandhi before that adjective. Example: `chhēng hō· sio` ("dress so as to be warm") → `chhēng3 hō· sio` (not `hō·3`). This is specific to the `hō·` + adjective construction: when `hō·` means "give / let" and is followed by a recipient pronoun or noun, it sandhis normally (`hō·3 lí`, `hō·3 góa`, `hō·3 i-seng`).
+
 When in doubt, defer to explicit tone numbers above syllables on the book page.
 
 ## Taiwanese Hanji
