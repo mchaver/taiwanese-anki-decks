@@ -4,7 +4,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 1,"Ū, góan a-kong peh-cha̍p gōa hòe a.","Ū, góan1 a7-kong peh2-cha̍p3-gōa3 hòe a3.","有, 阮阿公八十外歲矣.",Yes, my grandfather is over 80.
 2,A-má lóng chin thiàⁿ sun-á.,A7-má lóng1 chin7 thiàⁿ2 sun7-á.,阿媽攏真疼孫仔.,All grandmothers love their grandchildren.
 2,Góan a-má pí góan a-kong khah chē hòe.,Góan1 a7-má pí1 góan1 a7-kong khah2 chē3 hòe.,阮阿媽比阮阿公較濟歲.,My grandmother is older than my grandfather.
-3,Chit téng bîn-chhn̂g chin sè téng.,Chit2 téng1 bîn7-chhn̂g chin7 sè2 téng.,這頂眠床真細.,This bed is very small.
+3,Chit téng bîn-chhn̂g chin sè téng.,Chit2 téng1 bîn7-chhn̂g chin7 sè2 téng.,這頂眠床真細頂.,This bed is very small.
 3,Lí ê ê tī bîn-chhn̂g-kha.,Lí1 ê7 ê tī3 bîn7-chhn̂g7-kha.,你的鞋佇眠床跤.,Your shoes are under the bed.
 4,Che bô· kah lōa hó-chia̍h.,Che bô·7 kah2 lōa3 hó1-chia̍h.,這無甲偌好食.,This doesn't taste very good.
 4,Chit niá saⁿ bē lōa pháiⁿ-khòaⁿ.,Chit2 niá1 saⁿ bē3 lōa3 pháiⁿ1-khòaⁿ.,這領衫袂偌歹看.,This garment is not so bad-looking.
@@ -25,7 +25,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 15,Lí tī toh chit keng pēⁿ-īⁿ teh chò hō·-sū?,Lí1 tī3 toh1 chit3 keng7 pēⁿ3-īⁿ teh2 chò2 hō·3-sū?,你佇佗一間病院咧做護士?,In which hospital are you a nurse?
 15,Hō·-sū ê khang-khòe chiū-sī kò· pēⁿ-lâng.,Hō·3-sū ê7 khang7-khòe chiū7-sī3 kò·2 pēⁿ3-lâng.,護士的工課就是顧病人.,A nurse's job is to take care of the sick.
 16,Chhiáⁿ i sì tiám í-āu (OR: sì tiám-āu) chiah lâi.,Chhiáⁿ1 i7 sì2 tiám í1-āu (OR: sì2 tiám-āu) chiah2 lâi.,請伊四點以後 (OR: 四點後) 才來.,Ask him not to come till after 4:00.
-16,"Sai-hū nā ài án-ne, í-āu góa bô ài tòa.","Sai7-hū nā3 ài2 án1-ne, í1-āu góa1 bô7 ài2 tòa.","師傅若愛按呢, 以後我無愛蹛.",If the master workman wants it that way, I don't want to work here from now on.
+16,"Sai-hū nā ài án-ne, í-āu góa bô ài tòa.","Sai7-hū nā3 ài2 án1-ne, í1-āu góa1 bô7 ài2 tòa.","師傅若愛按呢, 以後我無愛蹛.",If the master workman wants it that way, from now on I don't want to stay here.
 16,Káu-goe̍h chhe-it í-āu góa lóng tī chhù-nih.,Káu1-goe̍h3 chhe7-it í1-āu góa1 lóng1 tī3 chhù-nih.,九月初一以後我攏佇厝裡.,From Sept. 1 on I'll be at home all the time.
 16,Saⁿ-ji̍t-āu chiah chò ē hó.,Saⁿ7-ji̍t3-āu chiah2 chò2 ē3 hó.,三日後才做會好.,It won't be finished till 3 days from now.
 17,"Boeh chia̍h-pn̄g í-chêng, tio̍h-ài sé chhiú.","Boeh2 chia̍h3-pn̄g í1-chêng, tio̍h3-ài2 sé1 chhiú.","欲食飯以前, 著愛洗手.",You have to wash your hands before eating.
@@ -99,7 +99,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 54,Lí ū thiaⁿ-tio̍h lâng teh sio-mē ê siaⁿ bô·?,Lí1 ū3 thiaⁿ7-tio̍h3 lâng7 teh2 sio7-mē ê7 siaⁿ bô·3?,你有聽著人咧相罵的聲無?,Did you hear the sound of people quarreling?
 54,I-seng teh kiò lí; lí ū thiaⁿ-kìⁿ bô·?,I7-seng teh2 kiò3 lí; lí1 ū3 thiaⁿ-kìⁿ bô·3?,醫生咧叫你; 你有聽見無?,The doctor is calling you; do you hear him?
 55,"Góa án-ni kóng, lí thiaⁿ-ū bô·?","Góa1 án1-ni kóng, lí1 thiaⁿ7-ū bô·3?","我按呢講, 你聽有無?",Do you understand what I said?
-55,"Siuⁿ sè siaⁿ, góa lóng thiaⁿ-bô.","Siuⁿ7 sè2 siaⁿ, góa1 lóng1 thiaⁿ7-bô.","聲細聲, 我攏聽無.",His voice is too low; I can't hear anything he's saying.
+55,"Siuⁿ sè siaⁿ, góa lóng thiaⁿ-bô.","Siuⁿ7 sè2 siaⁿ, góa1 lóng1 thiaⁿ7-bô.","傷細聲, 我攏聽無.",His voice is too low; I can't hear anything he's saying.
 55,"Lí nā iōng Tâi-gí góa mā thiaⁿ-ū, m̄-kú nā kóng Eng-gí góa thiaⁿ-khah-ū.","Lí1 nā3 iōng3 Tâi7-gí góa1 mā3 thiaⁿ7-ū, m̄3-kú1 nā3 kóng1 Eng7-gí góa1 thiaⁿ7-khah2-ū.","你若用台語我嘛聽有, 毋過若講英語我聽較有.",If you use Taiwanese I understand too, but if you speak English I understand better.
 55,Nā ū lâng kóng Ji̍t-gí (Ji̍t-pún-ōe) góa thiaⁿ-lóng-bô.,Nā3 ū3 lâng7 kóng1 Ji̍t3-gí (Ji̍t3-pún1-ōe) góa1 thiaⁿ7-lóng1-bô.,若有人講日語(日本話)我聽攏無.,When people speak Japanese I don't understand a word.
 61,Lí sái-chhia ē thiám bē?,Lí1 sái1-chhia ē3 thiám bē3?,你駛車會忝袂?,Are you tired from driving?
