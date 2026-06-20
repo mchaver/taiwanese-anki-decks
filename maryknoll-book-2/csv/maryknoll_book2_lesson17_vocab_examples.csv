@@ -5,7 +5,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 2,Góa khah ài chia̍h ti/ke bah.,Góa1 khah2 ài2 chia̍h3 ti7/ke7 bah.,我較愛食豬/雞肉.,I prefer pork / chicken.
 2,Téng lé-pài bé hiah ê bah hāi-khì a.,Téng1 lé1-pài2 bé1 hiah2 ê7 bah hāi3-khì a3.,頂禮拜買遐的肉害去矣.,That meat bought last week is spoiled.
 3,"Góa chàng-àm lâng bô-tú-hó, chin chá tō khì-khùn.","Góa1 chàng2-àm2 lâng7 bô7-tú1-hó, chin7 chá1 tō3 khì2-khùn.","我昨暗人無拄好, 真早就去睏.","Last night I didn't feel well, so I went to bed early."
-4,Goán thâu-ke cháu-chhut-khì ê khoán.,Goán1 thâu7-ke cháu1-chhut2-khì2 ê7-khoán.,阮頭家走出去的款.,Our boss must have gone out.
+4,Goán thâu-ke cháu-chhut-khì ê khoán.,Goán1 thâu7-ke cháu-chhut3-khì2 ê7-khoán.,阮頭家走出去的款.,Our boss must have gone out.
 4,Âng Sió-chiá cháu a; i bîn-á-chài ē koh lâi.,Âng Sió1-chiá1 cháu a3; i7 bîn7-á-chài2 ē3 koh2 lâi.,洪小姐走矣; 伊明仔載會閣來.,Miss Âng has left; she'll be back tomorrow morning.
 4,Chú Sai-hū in sim-pū cháu-khì.,Chú Sai7-hū3 in7 sim7-pū cháu1-khì.,朱師傅𪜶新婦走去.,Masterworkman Chu's daughter-in-law has run away.
 4,Lí chin gâu cháu.,Lí1 chin7 gâu7 cháu.,你真𠢕走.,You're quite a runner. / I never find you at home.
@@ -51,7 +51,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 25,A-kong bóeh chò 70 hòe ê seⁿ-ji̍t.,A7-kong bóeh2 chò2 chhit2-cha̍p3 hòe ê7 seⁿ7-ji̍t.,阿公欲做七十歲的生日.,Grandfather is going to celebrate his 70th birthday.
 26,Lán bóeh ióng sím-mih hong-hoat lâi khèng-chiok?,Lán1 bóeh2 ióng1 sím1-mih2 hong7-hoat lâi khèng2-chiok?,咱欲用啥物方法來慶祝?,What method shall we use to celebrate?
 27,"Khó-pí-kóng góa nā chîⁿ hō· lí, lí bóeh án-chóaⁿ iōng?","Khó1-pí1-kóng góa1 nā3 chîⁿ hō·3 lí, lí1 bóeh2 án1-chóaⁿ iōng?","可比講我若錢予你, 你欲按怎用?","Suppose I give you money, how will you use it?"
-27,"Chú Sió-chiá in a-kong chò-lâng chin hó; phì-jū-kóng lí nā ū sím-mih tāi-chì boeh chhōe i pang-chān, i tek-khak chin hoaⁿ-hí.","Chú Sió1-chiá in7 a7-kong chò2-lâng7 chin7 hó; phì2-jū3-kóng lí1 nā3 ū3 sím1-mih2 tāi3-chì boeh2 chhōe i7 pang7-chān, i7 tek2-khak chin7 hoaⁿ7-hí.","朱小姐𪜶阿公做人真好; 譬如講你若有啥物代誌欲揣伊幫贊, 伊的確真歡喜.","Miss Chu's grandfather is a great guy; for example, if you want him to help you with anything he'll certainly be very happy to."
+27,"Chú Sió-chiá in a-kong chò-lâng chin hó; phí-jū-kóng lí nā ū sím-mih tāi-chì boeh chhōe i pang-chān, i tek-khak chin hoaⁿ-hí.","Chú Sió1-chiá in7 a7-kong chò2-lâng7 chin7 hó; phí1-jū3-kóng lí1 nā3 ū3 sím1-mih2 tāi3-chì boeh2 chhōe i7 pang7-chān, i7 tek2-khak chin7 hoaⁿ7-hí.","朱小姐𪜶阿公做人真好; 譬如講你若有啥物代誌欲揣伊幫贊, 伊的確真歡喜.","Miss Chu's grandfather is a great guy; for example, if you want him to help you with anything he'll certainly be very happy to."
 28,Kiong-hí! Kiong-hí!,Kiong7-hí! Kiong7-hí!,恭喜! 恭喜!,Congratulations!
 28,Kiong-hí lí ū chò Sian-hū/Bo̍k-su/lāu-pē/lāu-bú/a-kong/a-má.,Kiong7-hí lí1 ū3 chò2 Sian7-hū/Bo̍k3-su/lāu3-pē/lāu3-bú/a7-kong/a7-má.,恭喜你有做神父/牧師/老爸/老母/阿公/阿媽.,Congratulations on becoming a priest / minister / father / mother / grandfather / grandmother!
 29,Chit ê âng-eⁿ-á chin kó·-chui.,Chit2 ê7 âng7-eⁿ7-á chin7 kó·1-chui.,這个紅嬰仔真古錐.,This baby is really cute.
@@ -66,7 +66,7 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 32,Chhī-lāi pí-kàu khah lāu-jia̍t.,Chhī3-lāi pí1-kàu khah2 lāu3-jia̍t.,市內比較較鬧熱.,There are many more people downtown.
 33,"Lāu Ko ê kha chin lò, só·-í lâng kiò i ""lò-kha-ê"".","Lāu3 Ko ê7 kha chin7 lò, só·1-í lâng7 kiò2 i7 ""lò2-kha-ê"".","老高的跤真躼, 所以人叫伊「躼跤的」.","Old Mr. Ko's legs are long, so people call him ""Long-legs""."
 33,Góa pí lí khah lò.,Góa1 pí1 lí1 khah2 lò.,我比你較躼.,I'm taller than he is.
-33,"Bêng-Sêng tha̍k 5 nî niā-niā, m̄-kú i kha-chhiú tek-pia̍t pí lâng khah lò.","Bêng7-Sêng tha̍k3 gō· nî niā3-niā, m̄3-kú1 i7 kha7-chhiú tek2-pia̍t pí1 lâng7 khah2 lò.","明成讀五年爾爾, 毋過伊跤手特別比人較躼.",Bêng-Sêng is only in 5th grade but his arms and legs are especially longer than most.
+33,"Bêng-Sêng tha̍k 5 nî niā-niā, m̄-kú i kha-chhiú te̍k-pia̍t pí lâng khah lò.","Bêng7-Sêng tha̍k3 gō· nî niā3-niā, m̄3-kú1 i7 kha7-chhiú te̍k3-pia̍t pí1 lâng7 khah2 lò.","明成讀五年爾爾, 毋過伊跤手特別比人較躼.",Bêng-Sêng is only in 5th grade but his arms and legs are especially longer than most.
 34,He ná góa ê.,He ná1 góa1 ê.,彼若我的.,That looks like mine.
 34,Gōa-bīn ná chhin-chhiūⁿ teh lo̍h-hō·.,Gōa3-bīn ná1 chhin7-chhiūⁿ7 teh2 lo̍h3-hō·.,外面若親像咧落雨.,It sounds like it's raining outside.
 34,Ná chhin-chhiūⁿ teh lo̍h-hō· ê-khoán.,Ná1 chhin7-chhiūⁿ7 teh2 lo̍h3-hō· ê7-khoán.,若親像咧落雨的款.,It looks like rain.
@@ -87,9 +87,9 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 46,"Chit ê phôe-ê sī iōng siōng-hó ê phôe chò ê; $3,250 tú-hó.","Chit2 ê7 phôe7-ê sī3 iōng3 siōng3-hó ê7 phôe7 chò2 ê; $3,250 tú1-hó.","這个皮鞋是用上好的皮做的; $3,250 拄好.","These leather shoes are made of the finest leather; $3,250 and they're yours."
 46,O·-sek ê chheh-phôe hit pún m̄-chai khì-hō· sím-mih-lâng théh-khì?,O·7-sek ê7 chheh2-phôe hit2 pún m̄3-chai khì2-hō· sím1-mih2-lâng7 théh3-khì?,烏色的冊皮彼本毋知去予啥物人提去?,I wonder who took the book with the black cover.
 49,Chin joa̍h; mài tòa góa seng-khu-piⁿ teh chhá.,Chin7 joa̍h; mài2 tòa2 góa1 seng7-khu7-piⁿ teh2 chhá.,真熱; 莫蹛我身軀邊咧吵.,It's too hot; don't pester me.
-53,"M̄-thang pîn-tōaⁿ, khah jīn-chin lè.","M̄3-thang pîn7-tōaⁿ, khah2 jīn3-chin lè.","毋通貧惰, 較認真咧.",Don't be lazy; be more industrious.
-53,"Chhī Lāu-su tiāⁿ-tiāⁿ kiò góa khì in chhù, m̄-kú lī hiah hng, góa pîn-tōaⁿ kiâⁿ.","Chhī Lāu3-su tiāⁿ3-tiāⁿ kiò2 góa1 khì2 in7 chhù, m̄3-kú1 lī3 hiah2 hng, góa1 pîn7-tōaⁿ kiâⁿ.","徐老師定定叫我去𪜶厝, 毋過離遐遠, 我貧惰行.","Teacher Chhī is always inviting me to his house, but it's so far - I'm too lazy to go."
-53,"Góa chit ê gín-á chin pîn-tōaⁿ siá-jī, kan-na siūⁿ chhit-thô.","Góa1 chit2 ê7 gín1-á chin7 pîn7-tōaⁿ siá2-jī, kan7-na siūⁿ3 chhit2-thô.","我這个囡仔真貧惰寫字, 干焦想𨑨迌.",This kid of mine is lazy about writing his characters; all he thinks of is playing.
+53,"M̄-thang pīn-tōaⁿ, khah jīn-chin lè.","M̄3-thang pīn3-tōaⁿ, khah2 jīn3-chin lè.","毋通貧惰, 較認真咧.",Don't be lazy; be more industrious.
+53,"Chhī Lāu-su tiāⁿ-tiāⁿ kiò góa khì in chhù, m̄-kú lī hiah hng, góa pīn-tōaⁿ kiâⁿ.","Chhī Lāu3-su tiāⁿ3-tiāⁿ kiò2 góa1 khì2 in7 chhù, m̄3-kú1 lī3 hiah2 hng, góa1 pīn3-tōaⁿ kiâⁿ.","徐老師定定叫我去𪜶厝, 毋過離遐遠, 我貧惰行.","Teacher Chhī is always inviting me to his house, but it's so far - I'm too lazy to go."
+53,"Góa chit ê gín-á chin pīn-tōaⁿ siá-jī, kan-na siūⁿ chhit-thô.","Góa1 chit2 ê7 gín1-á chin7 pīn3-tōaⁿ siá2-jī, kan7-na siūⁿ3 chhit2-thô.","我這个囡仔真貧惰寫字, 干焦想𨑨迌.",This kid of mine is lazy about writing his characters; all he thinks of is playing.
 54,Peh-soaⁿ chhēng pò·-ê pí chhēng phôe-ê khah hó-kiâⁿ.,Peh2-soaⁿ chhēng3 pò·2-ê pí1 chhēng3 phôe7-ê khah2 hó1-kiâⁿ.,𬦰山穿布鞋比穿皮鞋較好行.,Cloth shoes are better than leather ones for climbing mountains.
 54,Théh tōa-pò· lâi chhit-chhit-lè.,Théh3 tōa3-pò· lâi chhit2-chhit-lè.,提大布來拭拭咧.,Bring a dustcloth and wipe it.
 58,Goán a-kong tī gōa-bīn teh sàm-pō·.,Goán1 a7-kong tī3 gōa3-bīn teh2 sàm2-pō·.,阮阿公佇外面咧散步.,My grandfather is outside taking a walk.
@@ -113,8 +113,8 @@ vocab_number,poj,poj_sandhi,taiwanese_hanji,english
 66,He sī sió-khóa tāi-chì.,He sī3 sió1-khóa tāi3-chì.,彼是小可代誌.,That's a small matter.
 67,Chím-á àm-sî khah léng; nā bô sió-sim ē kôaⁿ-tio̍h.,Chím1-á àm2-sî khah2 léng; nā3 bô7 sió1-sim ē3 kôaⁿ-tio̍h3.,這馬暗時較冷; 若無小心會寒著.,It's colder at night now; if you're not careful you'll catch cold.
 67,Chhia chin-chē; kiâⁿ-lō· ài sió-sim.,Chhia chin7-chē; kiâⁿ7-lō· ài2 sió1-sim.,車真濟; 行路愛小心.,There are a lot of vehicles; you have to be careful walking.
-68,Chia ū ha̍k-hāu; sái-chhia ài tek-pia̍t sió-sim.,Chia ū3 ha̍k3-hāu; sái1-chhia ài2 tek2-pia̍t sió1-sim.,遮有學校; 駛車愛特別小心.,There is a school here; you must take special care when driving.
-68,Hit chhut tiān-iáⁿ chò liáu bô sím-mih tek-pia̍t.,Hit2 chhut2 tiān3-iáⁿ chò2 liáu1 bô7 sím1-mih2 tek2-pia̍t.,彼齣電影做了無啥物特別.,That movie is nothing to write home about.
+68,Chia ū ha̍k-hāu; sái-chhia ài te̍k-pia̍t sió-sim.,Chia ū3 ha̍k3-hāu; sái1-chhia ài2 te̍k3-pia̍t sió1-sim.,遮有學校; 駛車愛特別小心.,There is a school here; you must take special care when driving.
+68,Hit chhut tiān-iáⁿ chò liáu bô sím-mih te̍k-pia̍t.,Hit2 chhut2 tiān3-iáⁿ chò2 liáu1 bô7 sím1-mih2 te̍k3-pia̍t.,彼齣電影做了無啥物特別.,That movie is nothing to write home about.
 69,Kin-á-ji̍t chú ê ti-bah chin hó-chia̍h.,Kin7-á-ji̍t chú ê7 ti7-bah chin7 hó1-chia̍h.,今仔日煮的豬肉真好食.,The pork cooked today was very good.
 69,Ti iā ū o·-sek-ê iā ū pe̍h-sek-ê.,Ti iā3 ū3 o·7-sek-ê iā3 ū3 pe̍h3-sek-ê.,豬也有烏色的也有白色的.,There are black pigs and white ones also.
 71,"Goán sun-sim-pū tú-hó (OR: tú/tú-tú-hó) kàu-ūi ê-sî, chiah lo̍h-hō·.","Goán1 sun7-sim7-pū3 tú1-hó (OR: tú/tú1-tú1-hó) kàu2-ūi ê7-sî, chiah2 lo̍h3-hō·.","阮孫新婦拄好 (OR: 拄/拄拄好) 到位的時, 才落雨.",The rains came just as my son's daughter-in-law arrived.
